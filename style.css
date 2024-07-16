@@ -57,7 +57,7 @@
   .input-hidden {
     display: inline-block;
     width: 100%;
-    padding: 600px 200px 13px 60px;
+    padding: 1400px 200px 13px 60px;
     font-family: "Open Sans", sans;
     font-weight: 400;
     color: #232323;
@@ -206,7 +206,7 @@
     margin: auto;
     border: none;
     position: absolute;
-    left: 5px;
+    left: 2px;
   }
 
   .codigo {
@@ -220,9 +220,10 @@
   .Descricao {
     display: flex;
     position: absolute;
-    width: 85%;
-    top: 0%;
-    right: 15%;
+    width: 84%;
+    top: 1%;
+    right: 17%;
+    font-size: 8px;
 
   }
   .produto1 {
@@ -230,7 +231,7 @@
     position: absolute;
     width: 87%;
     padding-left: 4px;
-    top: 10%;
+    top: 5%;
     right: 13%;
   }
 
@@ -257,7 +258,7 @@
     border: 1px solid #000;
     position: absolute;
     left: 2%;
-    top: 8%;
+    top: 4%;
 }
 
 .produto2 {
@@ -265,7 +266,7 @@
   position: absolute;
   width: 87%;
   padding-left: 4px;
-  top: 15%;
+  top: 7%;
   right: 13%;
 }
 
@@ -274,7 +275,7 @@
   position: absolute;
   width: 87%;
   padding-left: 4px;
-  top: 20%;
+  top: 9%;
   right: 13%;
 }
 
@@ -283,17 +284,307 @@
   position: absolute;
   width: 87%;
   padding-left: 4px;
-  top: 10%;
+  top: 11%;
   right: 13%;
 }
+
+.produto5 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 13%;
+  right: 13%;
+}
+
+.produto6 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 15%;
+  right: 13%;
+}
+
+.produto7 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 17%;
+  right: 13%;
+}
+
+.produto8 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 19%;
+  right: 13%;
+}
+
+.produto9 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 21%;
+  right: 13%;
+}
+
+.produto10 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 23%;
+  right: 13%;
+}
+
+.produto11 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 25%;
+  right: 13%;
+}
+
+.produto12 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 27%;
+  right: 13%;
+}
+
+.produto13 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 29%;
+  right: 13%;
+}
+
+.produto14 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 31%;
+  right: 13%;
+}
+
+.produto15 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 33%;
+  right: 13%;
+}
+
+.produto16 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 35%;
+  right: 13%;
+}
+
+
+.produto17 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 37%;
+  right: 13%;
+}
+
+.produto18 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 39%;
+  right: 13%;
+}
+
+.produto19 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 41%;
+  right: 13%;
+}
+
+.produto20 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 43%;
+  right: 13%;
+}
+
+.produto21 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 45%;
+  right: 13%;
+}
+
+.produto22 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 47%;
+  right: 13%;
+}
+
+.produto23 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 49%;
+  right: 13%;
+}
+
+.produto24 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 51%;
+  right: 13%;
+}
+
+.produto25 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 53%;
+  right: 13%;
+}
+
+.produto26 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 55%;
+  right: 13%;
+}
+
+.produto27 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 57%;
+  right: 13%;
+}
+
+.produto28 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 59%;
+  right: 13%;
+}
+
+.produto29 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 61%;
+  right: 13%;
+}
+
+.produto30 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 63%;
+  right: 13%;
+}
+
+.produto31 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 65%;
+  right: 13%;
+}
+
+.produto32 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 67%;
+  right: 13%;
+}
+
+.produto33 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 69%;
+  right: 13%;
+}
+
+.produto34 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 71%;
+  right: 13%;
+}
+
+.produto35 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 73%;
+  right: 13%;
+}
+
+.produto36 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  padding-left: 4px;
+  top: 75%;
+  right: 13%;
+}
+
 
 .descricao2 {
   display: flex;
   position: absolute;
-  width: 42%;
-  height: 12px;
+  width: 45%;
+  height: 14px;
   padding-left: 4px;
-  right: 21%;
+  right: 18%;
   border: none;
 }
 
@@ -304,7 +595,7 @@
 
 
   .nome {
-    width: 91%;
+    width: 86%;
     padding: 6px 20px;
     border-color: black;
     border-radius: 5px;
@@ -314,7 +605,7 @@
 
 .escola {
 
-  width: 80%;
+  width: 75%;
   padding: 6px 20px;
   border: none;
   border-radius: 5px;
