@@ -18,20 +18,164 @@
                 <form action="https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr" method="post">
                     <h1 class="title">SOLICITAÇÃO DE ENTREGA DE MATERIAIS<span class="subtitle">Faça aqui o seu
                             pedido.</span></h1>
+                            <div id="time"></div>
                     <h2 class="nomes2"> Supervisor</h2>
-                    <select class="nome" id="Supervisor" name="Supervisor">
-                        <option value="Antônio Roney Rodrigues do Nascimento" name="Supervisor">Antônio Roney Rodrigues
+                    <select class="nome" id="Supervisor" name="Supervisor" onchange="myFunction()"  >
+                        <option  name="Supervisor">Selecionar Supervisor</option>
+                        <option  value="Antônio Roney Rodrigues do Nascimento" name="Supervisor">Antônio Roney Rodrigues
                             do Nascimento</option>
-                        <option value="Claudemir Aparecido da Cunha" name="Supervisor">Claudemir Aparecido da Cunha
-                        </option>
+                        <option  value="Claudemir Aparecido da Cunha" name="Supervisor">Claudemir Aparecido da Cunha</option>
+    
                         <option value="João Carlos Fabri" name="Supervisor">João Carlos Fabri</option>
                         <option value="Luis Pailarini" name="Supervisor">Luis Pailarini</option>
                         <option value="Luiz Fernando dos Santos" name="Supervisor">Luiz Fernando dos Santos</option>
                         <option value="Marcelo Fabiano Gonçalves de Lima" name="Supervisor">Marcelo Fabiano Gonçalves de
                             Lima</option>
                     </select>
-                    <h2>Escola</h2>
-                    <input class="escola" type="text" placeholder="Nome da Escola" name="Escola">
+                    <select class="escola" name="Escola" id="Escola" >
+                        <option > Escolas - Claudemir</option>
+                        <option class="claudemir" name="Escola" value="CMEI CAROLINA BENEDITA DOS SANTOS">CMEI CAROLINA BENEDITA DOS SANTOS</option>
+                        <option class="claudemir"  name="Escola" value="CMEI CLEMILDE DE MARTINI LOPES DOS SANTOS">CMEI CLEMILDE DE MARTINI LOPES DOS SANTOS</option>
+                        <option class="claudemir"  name="Escola" value="CMEI KALIM YOUSSEF YOUSSEF">CMEI KALIM YOUSSEF YOUSSEF</option>
+                        <option class="claudemir"  name="Escola" value="CMEI LAURA RIBEIRO VERGINIA DE CARVALHO">CMEI LAURA RIBEIRO VERGINIA DE CARVALHO</option>
+                        <option class="claudemir"  name="Escola" value="CMEI RAFAELA KEMMER DE MORAES">CMEI RAFAELA KEMMER DE MORAES</option>
+                        <option class="claudemir"  name="Escola" value="CMEI SANDRA REGINA MAXIMIANO LEME">CMEI SANDRA REGINA MAXIMIANO LEME</option>
+                        <option class="claudemir"  name="Escola" value="CMEI TELMA CAVALHERI MOTTA SANCHES">CMEI TELMA CAVALHERI MOTTA SANCHES</option>
+                        <option class="claudemir"  name="Escola" value="E. M. CARLOS DIETZ">E. M. CARLOS DIETZ</option>
+                        <option class="claudemir"  name="Escola" value="E. M. CECILIA HERMINIA OLIVEIRA GONÇALVES">E. M. CECILIA HERMINIA OLIVEIRA GONÇALVES</option>
+                        <option class="claudemir"  name="Escola" value="E. M. CORVETA CAMAQUÃ">E. M. CORVETA CAMAQUÃ</option>
+                        <option class="claudemir"  name="Escola" value="E. M. DOUTOR JOSE HOSKEN DE NOVAES">E. M. DOUTOR JOSE HOSKEN DE NOVAES</option>
+                        <option class="claudemir"  name="Escola" value="E. M. EURIDES CUNHA">E. M. EURIDES CUNHA</option>
+                        <option class="claudemir"  name="Escola" value="E. M. JOÃO XXIII">E. M. JOÃO XXIII</option>
+                        <option class="claudemir"  name="Escola" value="E. M. LEONOR MAESTRI DE HELD">E. M. LEONOR MAESTRI DE HELD</option>
+                        <option class="claudemir"  name="Escola" value="E. M. MELVIM JONES">E. M. MELVIM JONES</option>
+                        <option class="claudemir"  name="Escola" value="E. M. MERCEDES MARTINS MADUREIRA">E. M. MERCEDES MARTINS MADUREIRA</option>
+                        <option class="claudemir"  name="Escola" value="E. M. NINA GADERMANN">E. M. NINA GADERMANN</option>
+                        <option class="claudemir"  name="Escola" value="E. M. NOEMIA ALAVER GARCIA MALANGA">E. M. NOEMIA ALAVER GARCIA MALANGA</option>
+                        <option class="claudemir"  name="Escola" value="E. M. PROF. GENI FERREIRA">E. M. PROF. GENI FERREIRA</option>
+                        <option class="claudemir"  name="Escola" value="E. M. PROF. MARIA TEREZA MELEIRO AMANCIO">E. M. PROF. MARIA TEREZA MELEIRO AMANCIO</option>
+                        <option class="claudemir"  name="Escola" value="E. M. PROFESSOR JOAQUIM PEREIRA MENDES">E. M. PROFESSOR JOAQUIM PEREIRA MENDES</option>
+                        <option class="claudemir"  name="Escola" value="E. M. REVERENDO ODILON">E. M. REVERENDO ODILON</option>
+                        <option class="claudemir"  name="Escola" value="E. M. RUTH FERREIRA DE SOUZA">E. M. RUTH FERREIRA DE SOUZA</option>
+                        <option class="claudemir"  name="Escola" value="E. M. SANTOS DUMONT">E. M. SANTOS DUMONT</option>
+                 </select>   
+                 
+                 <select class=" escola2" name="Escola" id="Escola2">
+                        <option > Escolas - João Carlos Fabri</option>
+                        <option class="carlos"     name="Escola" value="CMEI APARECIDO NORATO CLARO">CMEI APARECIDO NORATO CLARO</option>
+                        <option class="carlos"     name="Escola" value="CMEI FRANCISCO SEIXAS ">CMEI FRANCISCO SEIXAS </option>
+                        <option class="carlos"     name="Escola" value="CMEI HELENA OMETTO TORRES">CMEI HELENA OMETTO TORRES</option>
+                        <option class="carlos"     name="Escola" value="CMEI JOÃO RAMPAZZO">CMEI JOÃO RAMPAZZO</option>
+                        <option class="carlos"     name="Escola" value="CMEI MARINA SABOIA NASCIMENTO">CMEI MARINA SABOIA NASCIMENTO</option>
+                        <option class="carlos"     name="Escola" value="CMEI MARLI MARQUES AGOSTINHO">CMEI MARLI MARQUES AGOSTINHO</option>
+                        <option class="carlos"     name="Escola" value="CMEI VILMA ELIZA COLOMBO RIBEIRO">CMEI VILMA ELIZA COLOMBO RIBEIRO</option>
+                        <option class="carlos"     name="Escola" value="E. M. ARMANDO DO ROSARIO CASTELO">E. M. ARMANDO DO ROSARIO CASTELO</option>
+                        <option class="carlos"     name="Escola" value="E. M. CLAUDIO DE ALMEIDA E SILVA">E. M. CLAUDIO DE ALMEIDA E SILVA</option>
+                        <option class="carlos"     name="Escola" value="E. M. CORINA MANTOVAN OKANO">E. M. CORINA MANTOVAN OKANO</option>
+                        <option class="carlos"     name="Escola" value="E. M. DO CAMPO EGIDIO DOMINGOS BRUNETTO">E. M. DO CAMPO EGIDIO DOMINGOS BRUNETTO</option>
+                        <option class="carlos"     name="Escola" value="E. M. DO CAMPO, TRABALHO E SABER">E. M. DO CAMPO, TRABALHO E SABER</option>
+                        <option class="carlos"     name="Escola" value="E. M. EUGENIO BRUGIN">E. M. EUGENIO BRUGIN</option>
+                        <option class="carlos"     name="Escola" value="E. M. FRANCISCO AQUINO TOLEDO">E. M. FRANCISCO AQUINO TOLEDO</option>
+                        <option class="carlos"     name="Escola" value="E. M. IRENE APARECIDA DA SILVA">E. M. IRENE APARECIDA DA SILVA</option>
+                        <option class="carlos"     name="Escola" value="E. M. JADIR DUTRA DE SOUZA">E. M. JADIR DUTRA DE SOUZA</option>
+                        <option class="carlos"     name="Escola" value="E. M. JOHN KENNEDY">E. M. JOHN KENNEDY</option>
+                        <option class="carlos"     name="Escola" value="E. M. LUIZ MARQUES CASTELO">E. M. LUIZ MARQUES CASTELO</option>
+                        <option class="carlos"     name="Escola" value="E. M. MACHADO DE ASSIS">E. M. MACHADO DE ASSIS</option>
+                        <option class="carlos"     name="Escola" value="E. M. OSVALDO CRUZ">E. M. OSVALDO CRUZ</option>
+                        <option class="carlos"     name="Escola" value="E. M. PROF ARACY SOARES DOS SANTOS">E. M. PROF ARACY SOARES DOS SANTOS</option>
+                        <option class="carlos"     name="Escola" value="E. M. PROF. BENTO MUNHOZ DA ROCHA NETO">E. M. PROF. BENTO MUNHOZ DA ROCHA NETO</option>
+                        <option class="carlos"     name="Escola" value="E. M. PROF. TEREZA CANHADAS BERTAN">E. M. PROF. TEREZA CANHADAS BERTAN</option>
+                        <option class="carlos"     name="Escola" value="E. M. VITORIO LIBARDI">E. M. VITORIO LIBARDI</option>
+                        <option class="carlos"     name="Escola" value="E. M. ZUMBI DOS PALMARES">E. M. ZUMBI DOS PALMARES</option>
+                    </select>
+
+                    <select class=" escola3" name="Escola" id="Escola3">
+                        <option > Escolas - Luis Paliarini</option>
+                        <option class="paliarini" name ="Escola" value="CMEI ANTONIETA TRINDADE ">CMEI ANTONIETA TRINDADE </option>
+                        <option class="paliarini" name ="Escola" value="CMEI MARISA ARRUDA DOS SANTOS">CMEI MARISA ARRUDA DOS SANTOS</option>
+                        <option class="paliarini" name ="Escola" value="CMEI PROF. CLELIA REGINA GUILHERME DE ALMEIDA">CMEI PROF. CLELIA REGINA GUILHERME DE ALMEIDA</option>
+                        <option class="paliarini" name ="Escola" value="CMEI RUTH DOS SANTOS SILVA">CMEI RUTH DOS SANTOS SILVA</option>
+                        <option class="paliarini" name ="Escola" value="CMEI VALERIA VERONESI">CMEI VALERIA VERONESI</option>
+                        <option class="paliarini" name ="Escola" value="CMEI WATER OKANO">CMEI WATER OKANO</option>
+                        <option class="paliarini" name ="Escola" value="E. M AMANDA ROSSI">E. M AMANDA ROSSI</option>
+                        <option class="paliarini" name ="Escola" value="E. M. ARISTEU DOS SANTOS RIBAS">E. M. ARISTEU DOS SANTOS RIBAS</option>
+                        <option class="paliarini" name ="Escola" value="A. M. ARTHUR THOMAZ">A. M. ARTHUR THOMAZ</option>
+                        <option class="paliarini" name ="Escola" value="E. M. EDMUNDO ODEBRECHT">E. M. EDMUNDO ODEBRECHT</option>
+                        <option class="paliarini" name ="Escola" value="E. M. ELIAS KAUAM">E. M. ELIAS KAUAM</option>
+                        <option class="paliarini" name ="Escola" value="E. M. HAYDEE COLLI MONTEIRO">E. M. HAYDEE COLLI MONTEIRO</option>
+                        <option class="paliarini" name ="Escola" value="E. M. HELVIO ESTEVES">E. M. HELVIO ESTEVES</option>
+                        <option class="paliarini" name ="Escola" value="E. M. NAIR AUZI CORDEIRO">E. M. NAIR AUZI CORDEIRO</option>
+                        <option class="paliarini" name ="Escola" value="E. M. NARA MANELLA">E. M. NARA MANELLA</option>
+                        <option class="paliarini" name ="Escola" value="E. M. NORMAN PROCHET">E. M. NORMAN PROCHET</option>
+                        <option class="paliarini" name ="Escola" value="E. M. PADRE ANCHIETA">E. M. PADRE ANCHIETA</option>
+                        <option class="paliarini" name ="Escola" value="E. M. PROF JOVITA KAISER">E. M. PROF JOVITA KAISER</option>
+                        <option class="paliarini" name ="Escola" value="E. M. PROF. MOACYR TEIXEIRA">E. M. PROF. MOACYR TEIXEIRA</option>
+                        <option class="paliarini" name ="Escola" value="E. M. PROF. RUTH LEMOS">E. M. PROF. RUTH LEMOS</option>
+                        <option class="paliarini" name ="Escola" value="E. M. PROF. VILMA RODRIGUES ROMERO">E. M. PROF. VILMA RODRIGUES ROMERO</option>
+                        <option class="paliarini" name ="Escola" value="E. M. SALIM ABORIHAM">E. M. SALIM ABORIHAM</option>
+                        <option class="paliarini" name ="Escola" value="E. M. SENADOR GASPAR VELLOSO">E. M. SENADOR GASPAR VELLOSO</option>
+                        <option class="paliarini" name ="Escola" value="E. PROF. JOSE GASPARINI">E. PROF. JOSE GASPARINI</option>
+                    </select>
+
+                    <select class=" escola4" name="Escola" id="Escola4">
+                        <option > Escolas - Antônio</option>
+                        <option class="antonio" name="Escola" value="CMEI DIRCE DE ALMEIDA BARROS BAPTISTA">CMEI DIRCE DE ALMEIDA BARROS BAPTISTA</option>
+                        <option class="antonio" name="Escola" value="CMEI IRMA MARIA NIVEA">CMEI IRMA MARIA NIVEA</option>
+                        <option class="antonio" name="Escola" value="CMEI LAVINIA MONTEIRO DE MORAES">CMEI LAVINIA MONTEIRO DE MORAES</option>
+                        <option class="antonio" name="Escola" value="CMEI LEONIDAS SOBRINHO PORTO">CMEI LEONIDAS SOBRINHO PORTO</option>
+                        <option class="antonio" name="Escola" value="CMEI MARIZIA CARLI LOURES">CMEI MARIZIA CARLI LOURES</option>
+                        <option class="antonio" name="Escola" value="CMEI NISSIA ROCHA CABRAL">CMEI NISSIA ROCHA CABRAL</option>
+                        <option class="antonio" name="Escola" value="CMEI PROF. VANDERLAINE A. RODRIGUES RIBEIRO">CMEI PROF. VANDERLAINE A. RODRIGUES RIBEIRO</option>
+                        <option class="antonio" name="Escola" value="CMEI TIAO BALALAO">CMEI TIAO BALALAO</option>
+                        <option class="antonio" name="Escola" value="E. M. AMÉRICO SABINO COIMBRA">E. M. AMÉRICO SABINO COIMBRA</option>
+                        <option class="antonio" name="Escola" value="E. M. ATANAZIO LEONEL">E. M. ATANAZIO LEONEL</option>
+                        <option class="antonio" name="Escola" value="E. M. CARLOS DA COSTA BRANCO">E. M. CARLOS DA COSTA BRANCO</option>
+                        <option class="antonio" name="Escola" value="E. M. CLAUDIA RIZZI">E. M. CLAUDIA RIZZI</option>
+                        <option class="antonio" name="Escola" value="E. M. DALVA FAHL BOAVENTURA">E. M. DALVA FAHL BOAVENTURA</option>
+                        <option class="antonio" name="Escola" value="E. M. DAVID DEQUECH">E. M. DAVID DEQUECH</option>
+                        <option class="antonio" name="Escola" value="E. M. DR. JOAQUIM VICENTE DE CASTRO">E. M. DR. JOAQUIM VICENTE DE CASTRO</option>
+                        <option class="antonio" name="Escola" value="E. M. IGNEZ CORSO ANDREAZZA">E. M. IGNEZ CORSO ANDREAZZA</option>
+                        <option class="antonio" name="Escola" value="E. M. MABIO GONÇALVES PALHANO">E. M. MABIO GONÇALVES PALHANO</option>
+                        <option class="antonio" name="Escola" value="E. M. MAESTRO ANDREA NUZZI">E. M. MAESTRO ANDREA NUZZI</option>
+                        <option class="antonio" name="Escola" value="E. M. MARI CARRERA BUENO">E. M. MARI CARRERA BUENO</option>
+                        <option class="antonio" name="Escola" value="E. M. MARIA CARMELITA VILELA MAGALHAES">E. M. MARIA CARMELITA VILELA MAGALHAES</option>
+                        <option class="antonio" name="Escola" value="E. M. NEMAN SAHYUN">E. M. NEMAN SAHYUN</option>
+                        <option class="antonio" name="Escola" value="E. M. PROF. JULIANO STINGHEN">E. M. PROF. JULIANO STINGHEN</option>
+                        <option class="antonio" name="Escola" value="E. M. PROF. MOACYR CAMARGO MARTINS">E. M. PROF. MOACYR CAMARGO MARTINS</option>
+                        <option class="antonio" name="Escola" value="E. M. PROF. ODÉSIO FRANCISCON">E. M. PROF. ODÉSIO FRANCISCON</option>
+                        <option class="antonio" name="Escola" value="E. M. SONIA PARREIRA DEBEI">E. M. SONIA PARREIRA DEBEI</option>
+                    </select>
+
+                    <select class=" escola5" name="Escola" id="Escola5">
+                        <option > Escolas - Marcelo</option>
+                        <option class="marcelo" name ="Escola" value="CMEI ABDIAS DO NASCIMENTO">CMEI ABDIAS DO NASCIMENTO</option>
+                        <option class="marcelo" name ="Escola" value="CMEI DURVALINA PEREIRA OLIVEIRA DE ASSIS">CMEI DURVALINA PEREIRA OLIVEIRA DE ASSIS</option>
+                        <option class="marcelo" name ="Escola" value="CMEI FRANCISCO QUESADA ORTEGA">CMEI FRANCISCO QUESADA ORTEGA</option>
+                        <option class="marcelo" name ="Escola" value="CMEI MALVINA POPPI PEDRIALLI">CMEI MALVINA POPPI PEDRIALLI</option>
+                        <option class="marcelo" name ="Escola" value="CMEI PROF. ROSANGELA O. ROMANO">CMEI PROF. ROSANGELA O. ROMANO</option>
+                        <option class="marcelo" name ="Escola" value="CMEI YOLANDA SALGADO VIEIRA LIMA">CMEI YOLANDA SALGADO VIEIRA LIMA</option>
+                        <option class="marcelo" name ="Escola" value="E. M. ANITA GARIBALDI">E. M. ANITA GARIBALDI</option>
+                        <option class="marcelo" name ="Escola" value="E. M. AUREA ALVIM TOFFOLI">E. M. AUREA ALVIM TOFFOLI</option>
+                        <option class="marcelo" name ="Escola" value="E. M. BARTOLOMEU DE GUSMÃO">E. M. BARTOLOMEU DE GUSMÃO</option>
+                        <option class="marcelo" name ="Escola" value="E. M. CARLOS KRAEMER">E. M. CARLOS KRAEMER</option>
+                        <option class="marcelo" name ="Escola" value="E. M. DA VILA BRASIL">E. M. DA VILA BRASIL</option>
+                        <option class="marcelo" name ="Escola" value="E. M. FRANCISCO PEREIRA DE ALMEIDA JUNIOR">E. M. FRANCISCO PEREIRA DE ALMEIDA JUNIOR</option>
+                        <option class="marcelo" name ="Escola" value="E. M. HIKOMA UDIHARA">E. M. HIKOMA UDIHARA</option>
+                        <option class="marcelo" name ="Escola" value="E. M. JOSE GARCIA VILLAR">E. M. JOSE GARCIA VILLAR</option>
+                        <option class="marcelo" name ="Escola" value="E. M. MAESTRO ROBERTO PEREIRA PANICO">E. M. MAESTRO ROBERTO PEREIRA PANICO</option>
+                        <option class="marcelo" name ="Escola" value="E. M. MARIA CANDIDA PEIXOTO SALLES">E. M. MARIA CANDIDA PEIXOTO SALLES</option>
+                        <option class="marcelo" name ="Escola" value="E. M. MARIA SHIRLEY BARNABÉ LYRA">E. M. MARIA SHIRLEY BARNABÉ LYRA</option>
+                        <option class="marcelo" name ="Escola" value="E. M. MIGUEL BASPALHOK">E. M. MIGUEL BASPALHOK</option>
+                        <option class="marcelo" name ="Escola" value="E. M. PEDRO VERGARA CORREA">E. M. PEDRO VERGARA CORREA</option>
+                        <option class="marcelo" name ="Escola" value="E. M. PROF. CARLOS ZEWE COIMBRA">E. M. PROF. CARLOS ZEWE COIMBRA</option>
+                        <option class="marcelo" name ="Escola" value="E. M. PROF. MARIA IRENE VICENTINI THEODORO">E. M. PROF. MARIA IRENE VICENTINI THEODORO</option>
+                        <option class="marcelo" name ="Escola" value="E. M. ROBERTO ALVES DE LIMA JUNIOR (AQUAVILE)">E. M. ROBERTO ALVES DE LIMA JUNIOR (AQUAVILE)</option>
+                        <option class="marcelo" name ="Escola" value="E. M. SAN IZIDRO">E. M. SAN IZIDRO</option>
+                        <option class="marcelo" name ="Escola" value="E. M. SUELY IDERIHA">E. M. SUELY IDERIHA</option>
+
+                    </select>
+
+            
 
             </div>
 
@@ -42,16 +186,16 @@
                         <p class="Supervisor">Un Medida</p>
                         <p class="Supervisor">Cód</p>
                         <p class="Supervisor produto">Descrição</p>
+                        <p class="Supervisor">Estoque Atual</p>
                         <p class="Supervisor">Qtd Pedida</p>
-                        <p class="Supervisor">Qtd Atual</p>
                     </div>
                     <div id="linha-horizontal"></div>
                     <div class="produto1">
                         <input class="Supervisor medida" name="Un-Medida" type="text" value="1Lt" readonly></input>
                         <input class="Supervisor codigo" name="Codigo" type="number" value="730143" readonly></input>
                         <input class="Supervisor descricao2" name="Produto" value="ALCOOL LIQUIDO 70%" readonly></input>
-                        <input type="number" class="number1" name="Qtd-Atual" placeholder="0">
-                        <input type="number" class="number2" name="Qtd-Pedida" placeholder="0">
+                        <input type="number" class="number1" name="Qtd-Pedida" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
@@ -59,8 +203,8 @@
                         <input class="Supervisor medida" name="Un-Medida2" type="text" value="5Lts" readonly></input>
                         <input class="Supervisor codigo" name="Codigo2" type="number" value="730002" readonly></input>
                         <input class="Supervisor descricao2" name="Produto2" value="ÁGUA SANITÁRIA" readonly></input>
-                        <input type="number" class="number1" name="Qtd-Atual2" placeholder="0">
-                        <input type="number" class="number2" name="Qtd-Pedida2" placeholder="0">
+                        <input type="number" class="number1" name="Qtd-Pedida2" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual2" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
@@ -68,305 +212,305 @@
                         <input class="Supervisor medida" name="Un-Medida3" type="text" value="Und" readonly></input>
                         <input class="Supervisor codigo" name="Codigo3" type="number" value="700308" readonly></input>
                         <input class="Supervisor descricao2" name="Produto3" value="BALDE 10L" readonly></input>
-                        <input type="number" class="number1" name="Qtd-Atual3" placeholder="0">
-                        <input type="number" class="number2" name="Qtd-Pedida3" placeholder="0">
+                        <input type="number" class="number1" name="Qtd-Pedida3" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual3" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto4">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700019" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="BALDE REFORÇADO 12L" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida4" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo4" type="number" value="700019" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto4" value="BALDE REFORÇADO 12L" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida4" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual4" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto5">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="5Lts" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730009" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="CERA INCOLOR" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida5" type="text" value="5Lts" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo5" type="number" value="730009" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto5" value="CERA INCOLOR" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida5" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual5" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto6">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700025" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="DESINTUPIDOR DE PIA" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida6" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo6" type="number" value="700025" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto6" value="DESINTUPIDOR DE PIA" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida6" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual6" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto7">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700024" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="DESINTUP VASO SANIT." readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida7" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo7" type="number" value="700024" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto7" value="DESINTUP VASO SANIT." readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida7" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual7" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto8">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="5 Lts" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730013" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="DESINFETANTE" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida8" type="text" value="5 Lts" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo8" type="number" value="730013" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto8" value="DESINFETANTE" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida8" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual8" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto9">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="5 Lts" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730016" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="DETERG AMONIACAL" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida9" type="text" value="5 Lts" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo9" type="number" value="730016" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto9" value="DETERG AMONIACAL" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida9" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual9" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto10">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="5 Lts" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730018" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="DETERG CONC NEUTRO" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida10" type="text" value="5 Lts" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo10" type="number" value="730018" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto10" value="DETERG CONC NEUTRO" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida10" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual10" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto11">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700033" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="ESCOVA DE MÃO" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida11" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo11" type="number" value="700033" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto11" value="ESCOVA DE MÃO" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida11" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual11" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto12">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="5 Lts" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700036" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="ESCOVA SANITÁRIA" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida12" type="text" value="5 Lts" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo12" type="number" value="700036" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto12" value="ESCOVA SANITÁRIA" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida12" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual12" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto13">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700038" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="ESPONJA DUPLA-FACE" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida13" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo13" type="number" value="700038" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto13" value="ESPONJA DUPLA-FACE" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida13" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual13" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto14">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700328" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="FIBRA VERDE LIMPEZA" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida14" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo14" type="number" value="700328" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto14" value="FIBRA VERDE LIMPEZA" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida14" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual14" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto15">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730027" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="FLANELA" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida15" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo15" type="number" value="730027" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto15" value="FLANELA" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida15" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual15" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto16">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730184" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="LÃ DE AÇO" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida16" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo16" type="number" value="730184" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto16" value="LÃ DE AÇO" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida16" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual16" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto17">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="5 Lts" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730037" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="LIMPA PEDRAS 5 LITROS" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida17" type="text" value="5 Lts" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo17" type="number" value="730037" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto17" value="LIMPA PEDRAS 5 LITROS" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida17" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual17" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto18">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="5 Lts" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730038" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="LIMPA VIDROS" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida18" type="text" value="5 Lts" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo18" type="number" value="730038" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto18" value="LIMPA VIDROS" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida18" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual18" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto19">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="500425" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="LUVA P" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida19" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo19" type="number" value="500425" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto19" value="LUVA P" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida19" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual19" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto20">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="500110" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="LUVA M" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida20" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo20" type="number" value="500110" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto20" value="LUVA M" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida20" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual20" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto21">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="500109" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="LUVA G" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida21" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo21" type="number" value="500109" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto21" value="LUVA G" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida21" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual21" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto22">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="5 Lts" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730020" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="MULTIUSO  5L" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida22" type="text" value="5 Lts" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo22" type="number" value="730020" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto22" value="MULTIUSO  5L" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida22" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual22" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto23">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700045" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="PÁ LIXO CABO LONGO" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida23" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo23" type="number" value="700045" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto23" value="PÁ LIXO CABO LONGO" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida23" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual23" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto24">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730369" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="PANO DE CHÃO" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida24" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo24" type="number" value="730369" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto24" value="PANO DE CHÃO" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida24" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual24" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto25">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700060" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="PEGA FIBRA C/ CABO" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida25" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo25" type="number" value="700060" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto25" value="PEGA FIBRA C/ CABO" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida25" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual25" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto26">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700081" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="RODO BORRACHA 40CM" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida26" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo26" type="number" value="700081" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto26" value="RODO BORRACHA 40CM" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida26" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual26" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto27">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700054" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="RODO REFORÇADO 60CM" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida27" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo27" type="number" value="700054" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto27" value="RODO REFORÇADO 60CM" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida27" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual27" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto28">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700055" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="RODO DE ESPUMA CABO" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida28" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo28" type="number" value="700055" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto28" value="RODO DE ESPUMA CABO" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida28" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual28" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto29">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="PDÇ" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730057" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="SABÃO EM BARRA" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida29" type="text" value="PDÇ" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo29" type="number" value="730057" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto29" value="SABÃO EM BARRA" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida29" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual29" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto30">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730058" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="SABÃO EM PÓ" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida30" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo30" type="number" value="730058" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto30" value="SABÃO EM PÓ" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida30" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual30" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto31">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="PCT" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730073" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="SACO DE LIXO DE 20 LT" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida31" type="text" value="PCT" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo31" type="number" value="730073" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto31" value="SACO DE LIXO DE 20 LT" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida31" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual31" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto32">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="PCT" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730075" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="SACO DE LIXO DE 60 LT" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida32" type="text" value="PCT" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo32" type="number" value="730075" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto32" value="SACO DE LIXO DE 60 LT" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida32" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual32" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto33">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="PCT" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730076" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="SACO DE LIXO DE 100 LT" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida33" type="text" value="PCT" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo33" type="number" value="730076" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto33" value="SACO DE LIXO DE 100 LT" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida33" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual33" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto34">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="730062" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="SAPOLEO PÓ" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida34" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo34" type="number" value="730062" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto34" value="SAPOLEO PÓ" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida34" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual34" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto35">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700066" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="VASSOURA NYLON" readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida35" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo35" type="number" value="700066" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto35" value="VASSOURA NYLON" readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida35" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual35" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
                     <br>
                     <div class="produto36">
-                        <input class="Supervisor medida" name="Un Medida" type="text" value="Und" readonly></input>
-                        <input class="Supervisor codigo" name="Código" type="number" value="700067" readonly></input>
-                        <input class="Supervisor descricao2" name="Produto" value="VASSOURA PALHA " readonly></input>
-                        <input type="number" class="number1" name="Quantidade Pedida" placeholder="0">
-                        <input type="number" class="number2" name="Quantidade Atual" placeholder="0">
+                        <input class="Supervisor medida" name="Un-Medida36" type="text" value="Und" readonly></input>
+                        <input class="Supervisor codigo" name="Codigo36" type="number" value="700067" readonly></input>
+                        <input class="Supervisor descricao2" name="Produto36" value="VASSOURA PALHA " readonly></input>
+                        <input type="number" class="number1" name="Qtd-Pedida36" placeholder="0">
+                        <input type="number" class="number2" name="Qtd-Atual36" placeholder="0">
                         <input type="text" name="Proximo" class="pula">
                     </div>
 

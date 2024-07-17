@@ -202,11 +202,11 @@
   
   
   .medida {
-    width: 27px;
+    width: 26px;
     margin: auto;
     border: none;
     position: absolute;
-    left: 2px;
+    left: 6px;
   }
 
   .codigo {
@@ -605,9 +605,68 @@
 
 .escola {
 
-  width: 75%;
+  width: 86%;
   padding: 6px 20px;
-  border: none;
+  border-color: black;
   border-radius: 5px;
-  background-color: white;
+  background-color: #f1f1f1;
+  top: 5px;
+  margin-top: 34px;
+  display: none;
+  margin-left: 29px;
+
 }
+
+.escola2 {
+  width: 86%;
+  padding: 6px 20px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  top: 5px;
+  margin-top: 34px;
+  display: none;
+  margin-left: 29px;
+
+}
+
+.escola3 {
+  width: 86%;
+  padding: 6px 20px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  top: 5px;
+  margin-top: 34px;
+  display: none;
+  margin-left: 29px;
+
+}
+
+.escola4 {
+  width: 86%;
+  padding: 6px 20px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  top: 5px;
+  margin-top: 34px;
+  display: none;
+  margin-left: 29px;
+
+}
+
+.escola5 {
+  width: 86%;
+  padding: 6px 20px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  top: 5px;
+  margin-top: 34px;
+  display: none;
+  margin-left: 29px;
+
+}
+
+
