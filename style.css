@@ -199,7 +199,7 @@
 
   .produto {
     padding-left: 10%;
-    padding-right: 32%;
+    padding-right: 30%;
   }
   
   
@@ -212,6 +212,7 @@
      left: 5px;
      border-color: black;
      border-radius: 7px;
+     background: transparent;
   }
 
   .codigo {
@@ -219,6 +220,7 @@
     left: 56px;
     border: 17px;
     border-radius: 7px;
+    background: transparent;
 }
   
 
@@ -230,6 +232,7 @@
     right: 17%;
     font-size: 8px;
     align-items: center;
+
 
   }
   .produto1 {
@@ -246,7 +249,7 @@
     width: 29px;
     height: 18px;
     position: absolute;
-    left: 106%;
+    left: 104%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
@@ -259,11 +262,11 @@
     width: 29px;
     height: 18px;
     position: absolute;
-    left: 90%;
+    left: 88%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
-    border: 2px;
+    border: 5px;
   }
   
   #linha-horizontal {
@@ -604,7 +607,7 @@
   border: none;
   height: 16px;
   text-align: center;
-  margin-top: 2px;
+  background: transparent;
 
 }
 
@@ -743,10 +746,15 @@
 
 .date {
   position: relative;
-  top: -52px;
-  left: -36%;
-  padding: 2px 4px;
+  width: 27%;
+  padding: 2px 2px;
+  border-color: black;
   border-radius: 5px;
+  background-color: #f1f1f1;
+  bottom: 51px;
+  left: -38%;
+  height: 19%;
+
 
 
 }
