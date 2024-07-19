@@ -64,9 +64,8 @@
     height: 711px;
     background: transparent;
     padding-bottom: 500px;
-    left: -29px;
+    left: -21px;
     top: -67px;
-
 
   }
   .input-hidden::-webkit-input-placeholder {
@@ -167,7 +166,7 @@
     padding: 0 10px;
     float: left;
     position: absolute;
-    left: 153px;
+    left: 134px;
     top: 1409px;
 
   }
@@ -193,7 +192,7 @@
 
   .Supervisor {
     color: black;
-    padding-left: 15px;
+    padding-left: 22px;
     font-size: 12px;
   }
 
@@ -247,7 +246,7 @@
     width: 29px;
     height: 18px;
     position: absolute;
-    left: 105%;
+    left: 106%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
@@ -723,11 +722,10 @@
 .nomes3 {
   font-size: small;
   position: relative;
-  left: -185px;
+  left: -174px;
   top: -26px;
   display: none;
   font-size: 10px;
-
 
 }
 
@@ -765,7 +763,7 @@
   opacity: 0.5;
   width: 411px;
   height: 955px;
-  left: -35px;
+  left: -26px;
   border-radius: 20px;
   top: -65px;
 }
@@ -774,7 +772,6 @@
   width: 396px;
   position: absolute;
   top: 947px;
-  left: -6px;
-
-
+  left: -26px;
 }
+
