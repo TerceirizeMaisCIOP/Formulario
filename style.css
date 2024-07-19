@@ -64,9 +64,8 @@
     height: 711px;
     background: transparent;
     padding-bottom: 500px;
-    left: -21px;
+    left: -12%;
     top: -67px;
-
   }
   .input-hidden::-webkit-input-placeholder {
     color: #232323;
@@ -242,7 +241,6 @@
     padding-left: 4px;
     top: 5%;
     right: 13%;
-    padding-bottom: 2px;
   }
 
   .number1 {
@@ -268,7 +266,7 @@
   }
   
   #linha-horizontal {
-    width: 102%;
+    width: 100%;
     border: 1px solid #000;
     position: absolute;
     left: -1%;
@@ -282,7 +280,6 @@
   padding-left: 4px;
   top: 7%;
   right: 13%;
-  padding-bottom: 2px;
 }
 
 .produto3 {
@@ -769,9 +766,9 @@
   position: absolute;
   background: gray;
   opacity: 0.5;
-  width: 411px;
+  width: 386px;
   height: 955px;
-  left: -26px;
+  left: -9%;
   border-radius: 20px;
   top: -65px;
 }
