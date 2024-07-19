@@ -59,7 +59,7 @@
   }
   /*input Animado*/
   .input-hidden {
-    width: 374px;
+    width: 398px;
     position: absolute;
     height: 711px;
     background: transparent;
@@ -199,10 +199,9 @@
 
 
   .produto {
-    padding-left: 38px;
-    padding-right: 77px;
+    padding-left: 39px;
+    padding-right: 101px;
   }
-  
   
   
   
@@ -248,7 +247,7 @@
     width: 29px;
     height: 18px;
     position: absolute;
-    left: 101%;
+    left: 105%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
@@ -261,7 +260,7 @@
     width: 29px;
     height: 18px;
     position: absolute;
-    left: 88%;
+    left: 90%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
@@ -732,6 +731,16 @@
 
 }
 
+.nomes4 {
+
+  font-size: small;
+  position: relative;
+  left: -185px;
+  top: -44px;
+  font-size: 10px;
+
+}
+
 .date {
   position: relative;
   top: -52px;
@@ -755,7 +764,7 @@
   position: absolute;
   background: gray;
   opacity: 0.5;
-  width: 386px;
+  width: 411px;
   height: 955px;
   left: -35px;
   border-radius: 20px;
