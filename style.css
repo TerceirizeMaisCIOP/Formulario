@@ -167,8 +167,8 @@
     padding: 0 10px;
     float: left;
     position: absolute;
-    left: 124px;
-    top: 1388px;
+    left: 153px;
+    top: 1409px;
 
   }
   .btn-submit {
@@ -193,7 +193,7 @@
 
   .Supervisor {
     color: black;
-    padding-left: 20px;
+    padding-left: 15px;
     font-size: 12px;
   }
 
@@ -603,7 +603,7 @@
   padding: 0px;
   border-radius: 8px;
   border: none;
-  height: 15px;
+  height: 16px;
   text-align: center;
 
 }
@@ -735,7 +735,7 @@
 
   font-size: small;
   position: relative;
-  left: -185px;
+  left: -181px;
   top: -44px;
   font-size: 10px;
 
@@ -744,10 +744,9 @@
 .date {
   position: relative;
   top: -52px;
-  left: -146px;
+  left: -137px;
   padding: 2px 4px;
   border-radius: 5px;
-
 
 
 }
@@ -775,7 +774,7 @@
   width: 396px;
   position: absolute;
   top: 947px;
-  left: -34px;
+  left: -6px;
 
 
 }
