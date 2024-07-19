@@ -3,40 +3,34 @@ function myFunction() {
     var x = document.getElementById("Supervisor");
     if (x.value === 'Claudemir Aparecido da Cunha') 
         document.getElementById("Escola").style.display = 'block';
+        document.getElementById("nomes3").style.display = 'block';
 
     if (x.value === 'João Carlos Fabri') 
         document.getElementById("Escola2").style.display = 'block';
+        document.getElementById("nomes3").style.display = 'block';
 
     if (x.value === 'Luis Pailarini') 
         document.getElementById("Escola3").style.display = 'block';
+        document.getElementById("nomes3").style.display = 'block';
 
     if (x.value === 'Antônio Roney Rodrigues do Nascimento') 
         document.getElementById("Escola4").style.display = 'block';
+        document.getElementById("nomes3").style.display = 'block';
 
     if (x.value === 'Marcelo Fabiano Gonçalves de Lima') 
         document.getElementById("Escola5").style.display = 'block';
+        document.getElementById("nomes3").style.display = 'block';
 
     }
 }
 
-{
-    var timeDisplay = document.getElementById("time");
-
-    function refreshTime() {
-      var dateString = new Date().toLocaleString("pt-BR", {timeZone: "America/Sao_Paulo"});
-      var formattedString = dateString.replace(", ", " - ");
-      timeDisplay.innerHTML = formattedString;
-    }
-    
-    setInterval(refreshTime, 1000);
-
-}
 
 
 
 const handleSubmit = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida]').value;
@@ -44,6 +38,7 @@ const handleSubmit = (event) =>{
     const Produto = document.querySelector('input[name=Produto]').value;
     const QtdPedida = document.querySelector('input[name=Qtd-Pedida]').value;
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual]').value;
+    
 
     alert('Informações Validadas')
 
@@ -56,7 +51,7 @@ const handleSubmit = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto,EstoqueAtual,QtdPedida  }),
+        body: JSON.stringify({  Data, Escola, Supervisor, Medida, Codigo, Produto,EstoqueAtual,QtdPedida  }),
 
 
     });
@@ -67,7 +62,8 @@ const handleSubmit = (event) =>{
 
 const handleSubmit2 = (event) =>{
     event.preventDefault();
-
+    
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida2]').value;
@@ -86,7 +82,7 @@ const handleSubmit2 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -97,6 +93,7 @@ const handleSubmit2 = (event) =>{
 const handleSubmit3 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida3]').value;
@@ -116,7 +113,7 @@ const handleSubmit3 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -127,6 +124,7 @@ const handleSubmit3 = (event) =>{
 const handleSubmit4 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida4]').value;
@@ -145,7 +143,7 @@ const handleSubmit4 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual , QtdPedida  }),
+        body: JSON.stringify({Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual , QtdPedida  }),
 
 
     });
@@ -156,6 +154,7 @@ const handleSubmit4 = (event) =>{
 const handleSubmit5 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida5]').value;
@@ -175,7 +174,7 @@ const handleSubmit5 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -187,6 +186,7 @@ const handleSubmit5 = (event) =>{
 const handleSubmit6 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida6]').value;
@@ -206,7 +206,7 @@ const handleSubmit6 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({Data,  Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -217,6 +217,7 @@ const handleSubmit6 = (event) =>{
 const handleSubmit7 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida7]').value;
@@ -236,7 +237,7 @@ const handleSubmit7 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -248,6 +249,7 @@ const handleSubmit7 = (event) =>{
 const handleSubmit8 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida8]').value;
@@ -266,7 +268,7 @@ const handleSubmit8 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -278,6 +280,7 @@ const handleSubmit8 = (event) =>{
 const handleSubmit9 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida9]').value;
@@ -296,7 +299,7 @@ const handleSubmit9 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -308,6 +311,7 @@ const handleSubmit9 = (event) =>{
 const handleSubmit10 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida10]').value;
@@ -327,7 +331,7 @@ const handleSubmit10 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -338,6 +342,7 @@ const handleSubmit10 = (event) =>{
 const handleSubmit11 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida11]').value;
@@ -356,7 +361,7 @@ const handleSubmit11 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -367,6 +372,7 @@ const handleSubmit11 = (event) =>{
 const handleSubmit12 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida12]').value;
@@ -385,7 +391,7 @@ const handleSubmit12 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -397,6 +403,7 @@ const handleSubmit12 = (event) =>{
 const handleSubmit13 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida13]').value;
@@ -415,7 +422,7 @@ const handleSubmit13 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -427,6 +434,7 @@ const handleSubmit13 = (event) =>{
 const handleSubmit14 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida14]').value;
@@ -445,7 +453,7 @@ const handleSubmit14 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -456,6 +464,7 @@ const handleSubmit14 = (event) =>{
 const handleSubmit15 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida15]').value;
@@ -474,7 +483,7 @@ const handleSubmit15 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -485,6 +494,7 @@ const handleSubmit15 = (event) =>{
 const handleSubmit16 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida16]').value;
@@ -504,7 +514,7 @@ const handleSubmit16 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -515,6 +525,7 @@ const handleSubmit16 = (event) =>{
 const handleSubmit17 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida17]').value;
@@ -534,7 +545,7 @@ const handleSubmit17 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -545,6 +556,7 @@ const handleSubmit17 = (event) =>{
 const handleSubmit18 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida18]').value;
@@ -564,7 +576,7 @@ const handleSubmit18 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -575,6 +587,7 @@ const handleSubmit18 = (event) =>{
 const handleSubmit19 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida19]').value;
@@ -594,7 +607,7 @@ const handleSubmit19 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -605,6 +618,7 @@ const handleSubmit19 = (event) =>{
 const handleSubmit20 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida20]').value;
@@ -624,7 +638,7 @@ const handleSubmit20 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -636,6 +650,7 @@ const handleSubmit20 = (event) =>{
 const handleSubmit21 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida21]').value;
@@ -655,7 +670,7 @@ const handleSubmit21 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -666,6 +681,7 @@ const handleSubmit21 = (event) =>{
 const handleSubmit22 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida22]').value;
@@ -685,7 +701,7 @@ const handleSubmit22 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({  Data,Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -696,6 +712,7 @@ const handleSubmit22 = (event) =>{
 const handleSubmit23 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida23]').value;
@@ -716,7 +733,7 @@ const handleSubmit23 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -727,6 +744,7 @@ const handleSubmit23 = (event) =>{
 const handleSubmit24 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida24]').value;
@@ -746,7 +764,7 @@ const handleSubmit24 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -757,6 +775,7 @@ const handleSubmit24 = (event) =>{
 const handleSubmit25 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida25]').value;
@@ -774,7 +793,7 @@ const handleSubmit25 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -785,6 +804,7 @@ const handleSubmit25 = (event) =>{
 const handleSubmit26 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida26]').value;
@@ -803,7 +823,7 @@ const handleSubmit26 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual , QtdPedida }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual , QtdPedida }),
 
 
     });
@@ -815,6 +835,7 @@ const handleSubmit26 = (event) =>{
 const handleSubmit27 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida27]').value;
@@ -833,7 +854,7 @@ const handleSubmit27 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -845,6 +866,7 @@ const handleSubmit27 = (event) =>{
 const handleSubmit28 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida28]').value;
@@ -863,7 +885,7 @@ const handleSubmit28 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -874,6 +896,7 @@ const handleSubmit28 = (event) =>{
 const handleSubmit29 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida29]').value;
@@ -893,7 +916,7 @@ const handleSubmit29 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual , QtdPedida }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual , QtdPedida }),
 
 
     });
@@ -904,6 +927,7 @@ const handleSubmit29 = (event) =>{
 const handleSubmit30 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida30]').value;
@@ -922,7 +946,7 @@ const handleSubmit30 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual , QtdPedida }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual , QtdPedida }),
 
 
     });
@@ -933,6 +957,7 @@ const handleSubmit30 = (event) =>{
 const handleSubmit31 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida31]').value;
@@ -952,7 +977,7 @@ const handleSubmit31 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -964,6 +989,7 @@ const handleSubmit31 = (event) =>{
 const handleSubmit32 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida32]').value;
@@ -983,7 +1009,7 @@ const handleSubmit32 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -995,6 +1021,7 @@ const handleSubmit32 = (event) =>{
 const handleSubmit33 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida33]').value;
@@ -1013,7 +1040,7 @@ const handleSubmit33 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -1024,6 +1051,7 @@ const handleSubmit33 = (event) =>{
 const handleSubmit34 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida34]').value;
@@ -1043,7 +1071,7 @@ const handleSubmit34 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -1054,6 +1082,7 @@ const handleSubmit34 = (event) =>{
 const handleSubmit35 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida35]').value;
@@ -1073,7 +1102,7 @@ const handleSubmit35 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data, Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
@@ -1084,6 +1113,7 @@ const handleSubmit35 = (event) =>{
 const handleSubmit36 = (event) =>{
     event.preventDefault();
 
+    const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida36]').value;
@@ -1103,7 +1133,7 @@ const handleSubmit36 = (event) =>{
 
 
         },
-        body: JSON.stringify({ Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        body: JSON.stringify({ Data,Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
 
 
     });
