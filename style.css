@@ -173,7 +173,6 @@
   .btn-submit {
     position: relative;
     color: #fff;
-    background: #43a351;
     cursor: pointer;
     border: none;
     border-radius: 50px;
@@ -183,6 +182,7 @@
     font-size: 1.3em;
     font-weight: bold;
     float: left;
+    background-image: linear-gradient(25deg, #d3b300 0, #bdb200 8.33%, #a6af00 16.67%, #8da902 25%, #73a011 33.33%, #58951b 41.67%, #3b8821 50%, #187a25 58.33%, #006e29 66.67%, #00642c 75%, #005b30 83.33%, #005434 91.67%, #004f38 100%);
   }
   .btn-submit:hover {
    
@@ -246,27 +246,25 @@
   }
 
   .number1 {
-    width: 29px;
-    height: 18px;
+    width: 23px;
+    height: 17px;
     position: absolute;
-    left: 104%;
+    left: 105%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
-    border: 2px;
 
 
   }
 
   .number2 {
-    width: 29px;
-    height: 18px;
+    width: 23px;
+    height: 17px;
     position: absolute;
     left: 88%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
-    border: 5px;
   }
   
   #linha-horizontal {
@@ -625,7 +623,7 @@
     border-color: black;
     border-radius: 5px;
     background-color: #f1f1f1;
-    bottom: 51px;
+    bottom: 34px;
     left: -10%;
 
 }
@@ -719,7 +717,7 @@
   font-size: 10px;
   position: relative;
   left: -166px;
-  bottom: 43px;
+  bottom: 26px;
 
 
 }
