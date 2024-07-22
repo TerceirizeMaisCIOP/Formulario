@@ -11,7 +11,7 @@
   letter-spacing: 1px;
   font-family: 'Calibri';
   top: -105px;
-  left: 6px;
+  left: 19px;
   }
   .box-title .title .subtitle {
     
@@ -774,10 +774,10 @@
 }
 
 .logo {
-  width: 396px;
+  width: 359px;
   position: absolute;
-  top: 923px;
-  left: -26px;
+  top: 950px;
+  left: 14px;
   display: none;
 }
 
