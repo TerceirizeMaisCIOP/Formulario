@@ -1,4 +1,6 @@
-
+body {
+  display: block;
+}
 
 
 .box-title .title {
@@ -24,7 +26,6 @@
     text-transform: uppercase;
     font-family: 'Calibri';
     font-weight: 500;
-    display: grid;
     grid-template-columns: 1fr max-content 1fr;
     grid-template-rows: 27px 0;
     grid-gap: 20px;
@@ -34,14 +35,7 @@
     left: -10px;
   
   }
-  .box-title .title .subtitle:after,.box-title .title .subtitle:before {
-    content: " ";
-    display: block;
-    border-bottom: 1px solid #7aa680;
-    border-top: 1px solid #7aa680;
-    height: 6px;
-    background-color: transparent;
-  }
+
   .box-formulario {
     display: flex;
 
@@ -64,7 +58,7 @@
     height: 711px;
     background: transparent;
     padding-bottom: 500px;
-    left: -7%;
+    left: -8%;
     top: -67px;
   }
   .input-hidden::-webkit-input-placeholder {
@@ -110,15 +104,7 @@
     line-height: 89px;
     color: #9bdba4;
   }
-  .textarea-hidden + label:before, .textarea-hidden + label:after {
-    
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .3s ease-in-out;
-  }
+
   .textarea-hidden + label:before {
     
     top: 5px;
@@ -247,12 +233,11 @@
     width: 23px;
     height: 17px;
     position: absolute;
-    left: 102%;
+    left: 107%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
-
-
+    
   }
 
   .number2 {
@@ -269,7 +254,7 @@
     width: 100%;
     border: 1px solid #000;
     position: absolute;
-    left: -1%;
+    left: 4%;
     top: 4%;
 }
 
@@ -765,9 +750,9 @@
   position: absolute;
   background: gray;
   opacity: 0.5;
-  width: 390px;
+  width: 403px;
   height: 955px;
-  left: -5%;
+  left: -4%;
   border-radius: 20px;
   top: -65px;
 }
