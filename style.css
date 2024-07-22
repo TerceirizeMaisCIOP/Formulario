@@ -11,7 +11,7 @@
   letter-spacing: 1px;
   font-family: 'Calibri';
   top: -105px;
-  left: 19px;
+  left: 28px;
   }
   .box-title .title .subtitle {
     
@@ -808,10 +808,10 @@
 }
 
 .rodapegeral {
-  position: relative;
-  top: 205%;
+  position: absolute;
+  top: 183%;
   width: 381px;
-  left: -23px;
+  left: -10px;
   height: 82px;
   display: none;
 } 

@@ -6,6 +6,7 @@ function myFunction() {
         document.getElementById("nomes3").style.display = 'block';
         document.getElementById("box").style.display = 'block';
         document.getElementById("logo").style.display = 'block';
+        document.getElementById("rodapegeral").style.display = 'block';
        
 
     if (x.value === 'João Carlos Fabri') 
@@ -13,6 +14,8 @@ function myFunction() {
         document.getElementById("nomes3").style.display = 'block';
         document.getElementById("box").style.display = 'block';
         document.getElementById("logo").style.display = 'block';
+        document.getElementById("rodapegeral").style.display = 'block';
+
        
 
     if (x.value === 'Luis Pailarini') 
@@ -20,6 +23,7 @@ function myFunction() {
         document.getElementById("nomes3").style.display = 'block';
         document.getElementById("box").style.display = 'block';
         document.getElementById("logo").style.display = 'block';
+        document.getElementById("rodapegeral").style.display = 'block';
        
 
     if (x.value === 'Antônio Roney Rodrigues do Nascimento') 
@@ -27,6 +31,7 @@ function myFunction() {
         document.getElementById("nomes3").style.display = 'block';
         document.getElementById("box").style.display = 'block';
         document.getElementById("logo").style.display = 'block';
+        document.getElementById("rodapegeral").style.display = 'block';
        
 
     if (x.value === 'Marcelo Fabiano Gonçalves de Lima') 
@@ -34,6 +39,7 @@ function myFunction() {
         document.getElementById("nomes3").style.display = 'block';
         document.getElementById("box").style.display = 'block';
         document.getElementById("logo").style.display = 'block';
+        document.getElementById("rodapegeral").style.display = 'block';
        
 
     }
