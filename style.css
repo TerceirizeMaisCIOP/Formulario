@@ -161,12 +161,11 @@
   }
   /*Botão*/
   .box-btn { 
-    width: 60%;
-    padding: 0 10px;
+    width: 69%;
     float: left;
     position: absolute;
-    left: 134px;
-    top: 1409px;
+    left: 121px;
+    top: 901px;
     display: none;
 
   }
@@ -809,9 +808,9 @@
 
 .rodapegeral {
   position: absolute;
-  top: 183%;
+  top: 1041px;
   width: 381px;
-  left: -10px;
+  left: -29px;
   height: 82px;
   display: none;
 } 
