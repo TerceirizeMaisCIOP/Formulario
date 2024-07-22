@@ -4,22 +4,35 @@ function myFunction() {
     if (x.value === 'Claudemir Aparecido da Cunha') 
         document.getElementById("Escola").style.display = 'block';
         document.getElementById("nomes3").style.display = 'block';
+        document.getElementById("box").style.display = 'block';
+        document.getElementById("logo").style.display = 'block';
+        document.getElementById("rodape").style.display = 'block';
+        document.getElementById("telefone").style.display = 'block';
+        document.getElementById("site").style.display = 'block';
 
     if (x.value === 'João Carlos Fabri') 
         document.getElementById("Escola2").style.display = 'block';
         document.getElementById("nomes3").style.display = 'block';
+        document.getElementById("box").style.display = 'block';
+        document.getElementById("logo").style.display = 'block';
 
     if (x.value === 'Luis Pailarini') 
         document.getElementById("Escola3").style.display = 'block';
         document.getElementById("nomes3").style.display = 'block';
+        document.getElementById("box").style.display = 'block';
+        document.getElementById("logo").style.display = 'block';
 
     if (x.value === 'Antônio Roney Rodrigues do Nascimento') 
         document.getElementById("Escola4").style.display = 'block';
         document.getElementById("nomes3").style.display = 'block';
+        document.getElementById("box").style.display = 'block';
+        document.getElementById("logo").style.display = 'block';
 
     if (x.value === 'Marcelo Fabiano Gonçalves de Lima') 
         document.getElementById("Escola5").style.display = 'block';
         document.getElementById("nomes3").style.display = 'block';
+        document.getElementById("box").style.display = 'block';
+        document.getElementById("logo").style.display = 'block';
 
     }
 }

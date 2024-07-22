@@ -167,6 +167,7 @@
     position: absolute;
     left: 134px;
     top: 1409px;
+    display: none;
 
   }
   .btn-submit {
@@ -247,7 +248,7 @@
     width: 23px;
     height: 17px;
     position: absolute;
-    left: 105%;
+    left: 102%;
     bottom: -17px;
     outline: none;
     border-radius: 7px;
@@ -601,7 +602,6 @@
   border-radius: 8px;
   border: none;
   height: 16px;
-  text-align: center;
   background: transparent;
 
 }
@@ -776,7 +776,34 @@
 .logo {
   width: 396px;
   position: absolute;
-  top: 947px;
+  top: 923px;
   left: -26px;
+  display: none;
 }
 
+.rodape {
+  position: absolute;
+  top: 185%;
+  font-size: x-small;
+  left: 54%;
+  color: teal;
+  font-style: oblique;
+  display: none;
+
+}
+
+.telefone {
+  left: 2%;
+  display: none;
+
+}
+
+.site {
+  left: 2%;
+  top: 190%;
+  font-size: medium;
+  color: teal;
+  font-style: oblique;
+  display: none;
+
+}
