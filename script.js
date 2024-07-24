@@ -1153,6 +1153,7 @@ const handleSubmit36 = (event) =>{
         
 
         
+        
     }  )
 
     .then(data => {
@@ -1160,7 +1161,6 @@ const handleSubmit36 = (event) =>{
         // Redireciona para outro arquivo HTML
         window.location.href = "./index-enviar.html"; // Substitua 'outro-arquivo.html' pelo nome do seu arquivo
     })
-
     
 }
 
