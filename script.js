@@ -59,7 +59,7 @@ const handleSubmit = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual]').value;
     
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -90,7 +90,7 @@ const handleSubmit2 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual2]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -121,7 +121,7 @@ const handleSubmit3 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -151,7 +151,7 @@ const handleSubmit4 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual4]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -182,7 +182,7 @@ const handleSubmit5 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -214,7 +214,7 @@ const handleSubmit6 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -245,7 +245,7 @@ const handleSubmit7 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -276,7 +276,7 @@ const handleSubmit8 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual8]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -307,7 +307,7 @@ const handleSubmit9 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual9]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -339,7 +339,7 @@ const handleSubmit10 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -369,7 +369,7 @@ const handleSubmit11 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual11]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -399,7 +399,7 @@ const handleSubmit12 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual12]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -430,7 +430,7 @@ const handleSubmit13 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual13]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -461,7 +461,7 @@ const handleSubmit14 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual14]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -491,7 +491,7 @@ const handleSubmit15 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual15]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -522,7 +522,7 @@ const handleSubmit16 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -553,7 +553,7 @@ const handleSubmit17 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -584,7 +584,7 @@ const handleSubmit18 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -615,7 +615,7 @@ const handleSubmit19 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -646,7 +646,7 @@ const handleSubmit20 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -678,7 +678,7 @@ const handleSubmit21 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -709,7 +709,7 @@ const handleSubmit22 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -741,7 +741,7 @@ const handleSubmit23 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -772,7 +772,7 @@ const handleSubmit24 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -801,7 +801,7 @@ const handleSubmit25 = (event) =>{
     const QtdPedida = document.querySelector('input[name=Qtd-Pedida25]').value;
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual25]').value;
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -831,7 +831,7 @@ const handleSubmit26 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual26]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -862,7 +862,7 @@ const handleSubmit27 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual27]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -893,7 +893,7 @@ const handleSubmit28 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual28]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -924,7 +924,7 @@ const handleSubmit29 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -954,7 +954,7 @@ const handleSubmit30 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual30]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -985,7 +985,7 @@ const handleSubmit31 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -1017,7 +1017,7 @@ const handleSubmit32 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -1048,7 +1048,7 @@ const handleSubmit33 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual33]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -1079,7 +1079,7 @@ const handleSubmit34 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -1110,7 +1110,7 @@ const handleSubmit35 = (event) =>{
 
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -1140,7 +1140,7 @@ const handleSubmit36 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual36]').value;
 
 
-    fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
+    fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 
         method: 'post',
         headers: {
@@ -1151,13 +1151,21 @@ const handleSubmit36 = (event) =>{
         },
         body: JSON.stringify({ Data,Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
         
+
         
+    }  )
 
-    }  );
+    .then(data => {
+        console.log('Dados enviados com sucesso:', data);
+        // Redireciona para outro arquivo HTML
+        window.location.href = "./index-enviar.html"; // Substitua 'outro-arquivo.html' pelo nome do seu arquivo
+    })
 
+    
 }
 
-   
+
+ 
 
 document.querySelector('form') .addEventListener ('submit', handleSubmit);
 document.querySelector('form') .addEventListener ('submit', handleSubmit2);
@@ -1195,13 +1203,12 @@ document.querySelector('form') .addEventListener ('submit', handleSubmit33);
 document.querySelector('form') .addEventListener ('submit', handleSubmit34);
 document.querySelector('form') .addEventListener ('submit', handleSubmit35);
 document.querySelector('form') .addEventListener ('submit', handleSubmit36);
+/*
 
+{
+    function mostrarDiv (){
+        window.location = "./index-enviar.html";
+     
+     } }
 
-
-
-{function mostrarDiv (){
-   window.location = "./index-enviar.html";
-
-}
-
-}
+*/

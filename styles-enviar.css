@@ -16,9 +16,10 @@ body {
 
 h1 {
     font-size: 2.5em;
-    color: #333;
-    opacity: 0; /* Inicialmente oculto */
-    animation: fadeIn 2s forwards; /* Chama a animação */
+    color: black;
+    opacity: 0;
+    font-family: 'Calibri';
+    animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn {
