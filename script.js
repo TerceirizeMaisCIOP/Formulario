@@ -46,8 +46,6 @@ function myFunction() {
 }
 
 
-
-
 const handleSubmit = (event) =>{
     event.preventDefault();
 
@@ -60,8 +58,6 @@ const handleSubmit = (event) =>{
     const QtdPedida = document.querySelector('input[name=Qtd-Pedida]').value;
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual]').value;
     
-
-    alert('Informações Validadas')
 
     fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
 
@@ -1144,6 +1140,7 @@ const handleSubmit36 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual36]').value;
 
 
+    alert("Eu sou um alert!");
 
     fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
 
@@ -1155,13 +1152,14 @@ const handleSubmit36 = (event) =>{
 
         },
         body: JSON.stringify({ Data,Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
+        
+        
 
-
-    });
-
+    }  );
 
 }
 
+   
 
 document.querySelector('form') .addEventListener ('submit', handleSubmit);
 document.querySelector('form') .addEventListener ('submit', handleSubmit2);
@@ -1200,3 +1198,12 @@ document.querySelector('form') .addEventListener ('submit', handleSubmit34);
 document.querySelector('form') .addEventListener ('submit', handleSubmit35);
 document.querySelector('form') .addEventListener ('submit', handleSubmit36);
 
+
+
+
+{function mostrarDiv (){
+   window.location = "./index-enviar.html";
+
+}
+
+}
