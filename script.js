@@ -1140,8 +1140,6 @@ const handleSubmit36 = (event) =>{
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual36]').value;
 
 
-    alert("Eu sou um alert!");
-
     fetch('https://api.sheetmonkey.io/form/iGhuL7E8qr7sBsfjFgZqUr', {
 
         method: 'post',
