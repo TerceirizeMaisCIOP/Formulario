@@ -769,18 +769,8 @@ body {
   align-items: center;
   position: relative;
   margin-left: 66px;
+  width: 380px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .autocomplete-container {
@@ -811,6 +801,7 @@ body {
   height: 79px;
   width: 320px;
   display: flex;
+  flex-direction: column;
 }
 
 .autocomplete-item {
@@ -825,30 +816,6 @@ body {
 .autocomplete-item:hover {
   background-color: gray;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
