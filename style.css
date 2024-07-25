@@ -152,27 +152,23 @@ body {
     position: absolute;
     left: 121px;
     top: 901px;
-    display: none;
+
 
   }
   .btn-submit {
-    position: relative;
+    position: absolute;
     color: #fff;
     cursor: pointer;
     border: none;
     border-radius: 50px;
-    transition: 0.5s;
     width: 42%;
-    padding: 0.5em 1em;
-    font-size: 1.3em;
+    height: 39px;
+    left: 7px;
     font-weight: bold;
     float: left;
     background-image: linear-gradient(25deg, #d3b300 0, #bdb200 8.33%, #a6af00 16.67%, #8da902 25%, #73a011 33.33%, #58951b 41.67%, #3b8821 50%, #187a25 58.33%, #006e29 66.67%, #00642c 75%, #005b30 83.33%, #005434 91.67%, #004f38 100%);
   }
-  .btn-submit:hover {
-   
-    background-color:#4c4c4c;
-  }
+
 
 
   .Supervisor {
@@ -618,69 +614,96 @@ body {
   background-color: #f1f1f1;
   top: -60px;
   margin-top: 34px;
-  display: none;
+  display: block;
   margin-left: 29px;
   left: -6.5%;
 
 }
 
-.escola2 {
-  position: relative;
-  width: 86%;
-  padding: 6px 20px;
-  border-color: black;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  top: -60px;
-  margin-top: 34px;
-  display: none;
-  margin-left: 29px;
-  left: -6.5%;
+.claudemir {
+  background-color: #f0f8ff; /* Azul claro */
+}
+.carlos {
+  background-color: #ffebcd; /* Bege */
+}
+.paliarini {
+  background-color: #ffe4e1; /* Rosa claro */
+}
+.antonio {
+  background-color: #f0fff0; /* Verde claro */
+}
+.marcelo {
+  background-color: #e6e6fa; /* Lavanda */
 }
 
-.escola3 {
-  position: relative;
-  width: 86%;
-  padding: 6px 20px;
-  border-color: black;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  top: -60px;
-  margin-top: 34px;
-  display: none;
-  margin-left: 29px;
-  left: -6.5%;
+.claudemir2 {
+  background-color: #f0f8ff; /* Azul claro */
+  color:black;
+  font-size: large;
+  letter-spacing: 1px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
 }
-.escola4 {
-  position: relative;
-  width: 86%;
-  padding: 6px 20px;
-  border-color: black;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  top: -60px;
-  margin-top: 34px;
-  display: none;
-  margin-left: 29px;
-  left: -6.5%;
+.carlos2 {
+  background-color: #ffebcd; /* Bege */
+  color:black;
+  font-size: large;
+  letter-spacing: 1px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.paliarini2 {
+  background-color: #ffe4e1; /* Rosa claro */
+  color:black;
+  font-size: large;
+  letter-spacing: 1px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.antonio2 {
+  background-color: #f0fff0; /* Verde claro */
+  color:black;
+  font-size: large;
+  letter-spacing: 1px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.marcelo2 {
+  background-color: #e6e6fa; /* Lavanda */
+  color:black;
+  font-size: large;
+  letter-spacing: 1px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-
-.escola5 {
-  position: relative;
-  width: 86%;
-  padding: 6px 20px;
-  border-color: black;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  top: -60px;
-  margin-top: 34px;
-  display: none;
-  margin-left: 29px;
-  left: -6.5%;
-
+.antonio2 {
+  background-color: #f0fff0; /* Lavanda */
+  color:black;
+  font-size: large;
+  letter-spacing: 1px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-
 
 .mes {
     position: relative;
@@ -707,7 +730,6 @@ body {
   position: relative;
   left: -158px;
   top: -26px;
-  display: none;
   font-size: 10px;
 
 }
@@ -761,7 +783,6 @@ body {
   position: absolute;
   top: 950px;
   left: 14px;
-  display: none;
 }
 
 .rodape {
@@ -796,7 +817,6 @@ body {
   width: 381px;
   left: -29px;
   height: 82px;
-  display: none;
 } 
 
 .fundo {
@@ -816,6 +836,43 @@ body {
 
 
 
+
+
+}
+
+.Enviar {
+
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  width: 35%;
+
+
+}
+
+
+.loading {
+  position: relative;
+  width: 28px;
+  top: 2px;
+  animation: spin 1s infinite linear;
+
+}
+
+
+@keyframes spin {
+from {
+  transform: rotate(0deg);
+
+}
+
+to { 
+  transform: rotate(360deg);
+
+}
 
 
 }

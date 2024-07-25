@@ -1,49 +1,3 @@
-{
-function myFunction() {
-    var x = document.getElementById("Supervisor");
-    if (x.value === 'Claudemir Aparecido da Cunha') 
-        document.getElementById("Escola").style.display = 'block';
-        document.getElementById("nomes3").style.display = 'block';
-        document.getElementById("box").style.display = 'block';
-        document.getElementById("logo").style.display = 'block';
-        document.getElementById("rodapegeral").style.display = 'block';
-       
-
-    if (x.value === 'João Carlos Fabri') 
-        document.getElementById("Escola2").style.display = 'block';
-        document.getElementById("nomes3").style.display = 'block';
-        document.getElementById("box").style.display = 'block';
-        document.getElementById("logo").style.display = 'block';
-        document.getElementById("rodapegeral").style.display = 'block';
-
-       
-
-    if (x.value === 'Luis Pailarini') 
-        document.getElementById("Escola3").style.display = 'block';
-        document.getElementById("nomes3").style.display = 'block';
-        document.getElementById("box").style.display = 'block';
-        document.getElementById("logo").style.display = 'block';
-        document.getElementById("rodapegeral").style.display = 'block';
-       
-
-    if (x.value === 'Antônio Roney Rodrigues do Nascimento') 
-        document.getElementById("Escola4").style.display = 'block';
-        document.getElementById("nomes3").style.display = 'block';
-        document.getElementById("box").style.display = 'block';
-        document.getElementById("logo").style.display = 'block';
-        document.getElementById("rodapegeral").style.display = 'block';
-       
-
-    if (x.value === 'Marcelo Fabiano Gonçalves de Lima') 
-        document.getElementById("Escola5").style.display = 'block';
-        document.getElementById("nomes3").style.display = 'block';
-        document.getElementById("box").style.display = 'block';
-        document.getElementById("logo").style.display = 'block';
-        document.getElementById("rodapegeral").style.display = 'block';
-       
-
-    }
-}
 
 
 const handleSubmit = (event) =>{
@@ -1127,8 +1081,21 @@ const handleSubmit35 = (event) =>{
 
 }
 
+
+const addloading = () =>{
+    const input = document.getElementById('enviar');
+    input.innerHTML = '<img src="./img/loading.png"class="loading">';
+}
+
+const Removeloading = () =>{
+    const input = document.getElementById('enviar');
+    input.innerHTML = 'Enviar';
+}
+
+
 const handleSubmit36 = (event) =>{
     event.preventDefault();
+    addloading();
 
     const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('select[name=Escola]').value;
@@ -1138,7 +1105,6 @@ const handleSubmit36 = (event) =>{
     const Produto = document.querySelector('input[name=Produto36]').value;
     const QtdPedida = document.querySelector('input[name=Qtd-Pedida36]').value;
     const EstoqueAtual = document.querySelector('input[name=Qtd-Atual36]').value;
-
 
     fetch('https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma', {
 

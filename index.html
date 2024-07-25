@@ -11,9 +11,7 @@
 <body>
 
     <div class="box-formulario">
-
         <div class="formulario">
-
             <div class="box-title">
                 <form action="https://api.sheetmonkey.io/form/aQCXeiPiwGzVc79CZ7yRma" method="post">
                     <h1 class="title">SOLICITAÇÃO DE MATERIAIS<span class="subtitle">Faça aqui o seu
@@ -22,19 +20,20 @@
                         <h2 class="nomes4">DATA</h2>
                             <input id="date" type="date" class="date" name="date" placeholder="dd/mm/aaaa"/>
                     <h2 class="nomes2"> SUPERVISOR</h2>
-                    <select class="nome" id="Supervisor" name="Supervisor" onchange="myFunction()"  >
+                    <select class="nome" id="Supervisor" name="Supervisor"  >
                         <option  name="Supervisor">Selecionar Supervisor</option>
-                        <option  value="Antônio Roney Rodrigues do Nascimento" name="Supervisor">Antônio Roney Rodrigues
+                        <option class="antonio" value="Antônio Roney Rodrigues do Nascimento" name="Supervisor">Antônio Roney Rodrigues
                             do Nascimento</option>
-                        <option  value="Claudemir Aparecido da Cunha" name="Supervisor">Claudemir Aparecido da Cunha</option>
-                        <option value="João Carlos Fabri" name="Supervisor">João Carlos Fabri</option>
-                        <option value="Luis Pailarini" name="Supervisor">Luis Pailarini</option>
-                        <option value="Marcelo Fabiano Gonçalves de Lima" name="Supervisor">Marcelo Fabiano Gonçalves de
+                        <option class="claudemir" value="Claudemir Aparecido da Cunha" name="Supervisor">Claudemir Aparecido da Cunha</option>
+                        <option class="carlos" value="João Carlos Fabri" name="Supervisor">João Carlos Fabri</option>
+                        <option class="paliarini" value="Luis Pailarini" name="Supervisor">Luis Pailarini</option>
+                        <option class="marcelo" value="Marcelo Fabiano Gonçalves de Lima" name="Supervisor">Marcelo Fabiano Gonçalves de
                             Lima</option>
                     </select>
                     <h2 class="nomes3" name = "nomes3" id="nomes3"> ESCOLAS</h2>
                     <select class="escola" name="Escola" id="Escola" >
-                        <option > Escolas - Claudemir</option>
+                        <option > Selecionar Escolas</option>
+                        <option class="claudemir2" > Escolas - Claudemir</option>
                         <option class="claudemir" name="Escola" value="CMEI CAROLINA BENEDITA DOS SANTOS">CMEI CAROLINA BENEDITA DOS SANTOS</option>
                         <option class="claudemir"  name="Escola" value="CMEI CLEMILDE DE MARTINI LOPES DOS SANTOS">CMEI CLEMILDE DE MARTINI LOPES DOS SANTOS</option>
                         <option class="claudemir"  name="Escola" value="CMEI KALIM YOUSSEF YOUSSEF">CMEI KALIM YOUSSEF YOUSSEF</option>
@@ -59,10 +58,7 @@
                         <option class="claudemir"  name="Escola" value="E. M. REVERENDO ODILON">E. M. REVERENDO ODILON</option>
                         <option class="claudemir"  name="Escola" value="E. M. RUTH FERREIRA DE SOUZA">E. M. RUTH FERREIRA DE SOUZA</option>
                         <option class="claudemir"  name="Escola" value="E. M. SANTOS DUMONT">E. M. SANTOS DUMONT</option>
-                 </select>   
-                 
-                 <select class=" escola2" name="Escola" id="Escola2">
-                        <option > Escolas - João Carlos Fabri</option>
+                        <option class="carlos2" > Escolas - João Carlos Fabri</option>
                         <option class="carlos"     name="Escola" value="CMEI APARECIDO NORATO CLARO">CMEI APARECIDO NORATO CLARO</option>
                         <option class="carlos"     name="Escola" value="CMEI FRANCISCO SEIXAS ">CMEI FRANCISCO SEIXAS </option>
                         <option class="carlos"     name="Escola" value="CMEI HELENA OMETTO TORRES">CMEI HELENA OMETTO TORRES</option>
@@ -88,10 +84,7 @@
                         <option class="carlos"     name="Escola" value="E. M. PROF. TEREZA CANHADAS BERTAN">E. M. PROF. TEREZA CANHADAS BERTAN</option>
                         <option class="carlos"     name="Escola" value="E. M. VITORIO LIBARDI">E. M. VITORIO LIBARDI</option>
                         <option class="carlos"     name="Escola" value="E. M. ZUMBI DOS PALMARES">E. M. ZUMBI DOS PALMARES</option>
-                    </select>
-
-                    <select class=" escola3" name="Escola" id="Escola3">
-                        <option > Escolas - Luis Paliarini</option>
+                        <option class="paliarini2"> Escolas - Luis Paliarini</option>
                         <option class="paliarini" name ="Escola" value="CMEI ANTONIETA TRINDADE ">CMEI ANTONIETA TRINDADE </option>
                         <option class="paliarini" name ="Escola" value="CMEI MARISA ARRUDA DOS SANTOS">CMEI MARISA ARRUDA DOS SANTOS</option>
                         <option class="paliarini" name ="Escola" value="CMEI PROF. CLELIA REGINA GUILHERME DE ALMEIDA">CMEI PROF. CLELIA REGINA GUILHERME DE ALMEIDA</option>
@@ -116,10 +109,7 @@
                         <option class="paliarini" name ="Escola" value="E. M. SALIM ABORIHAM">E. M. SALIM ABORIHAM</option>
                         <option class="paliarini" name ="Escola" value="E. M. SENADOR GASPAR VELLOSO">E. M. SENADOR GASPAR VELLOSO</option>
                         <option class="paliarini" name ="Escola" value="E. PROF. JOSE GASPARINI">E. PROF. JOSE GASPARINI</option>
-                    </select>
-
-                    <select class=" escola4" name="Escola" id="Escola4">
-                        <option > Escolas - Antônio</option>
+                        <option class = "antonio2"> Escolas - Antônio</option>
                         <option class="antonio" name="Escola" value="CMEI DIRCE DE ALMEIDA BARROS BAPTISTA">CMEI DIRCE DE ALMEIDA BARROS BAPTISTA</option>
                         <option class="antonio" name="Escola" value="CMEI IRMA MARIA NIVEA">CMEI IRMA MARIA NIVEA</option>
                         <option class="antonio" name="Escola" value="CMEI LAVINIA MONTEIRO DE MORAES">CMEI LAVINIA MONTEIRO DE MORAES</option>
@@ -145,10 +135,7 @@
                         <option class="antonio" name="Escola" value="E. M. PROF. MOACYR CAMARGO MARTINS">E. M. PROF. MOACYR CAMARGO MARTINS</option>
                         <option class="antonio" name="Escola" value="E. M. PROF. ODÉSIO FRANCISCON">E. M. PROF. ODÉSIO FRANCISCON</option>
                         <option class="antonio" name="Escola" value="E. M. SONIA PARREIRA DEBEI">E. M. SONIA PARREIRA DEBEI</option>
-                    </select>
-
-                    <select class=" escola5" name="Escola" id="Escola5">
-                        <option > Escolas - Marcelo</option>
+                        <option class="marcelo2" > Escolas - Marcelo</option>
                         <option class="marcelo" name ="Escola" value="CMEI ABDIAS DO NASCIMENTO">CMEI ABDIAS DO NASCIMENTO</option>
                         <option class="marcelo" name ="Escola" value="CMEI DURVALINA PEREIRA OLIVEIRA DE ASSIS">CMEI DURVALINA PEREIRA OLIVEIRA DE ASSIS</option>
                         <option class="marcelo" name ="Escola" value="CMEI FRANCISCO QUESADA ORTEGA">CMEI FRANCISCO QUESADA ORTEGA</option>
@@ -173,11 +160,7 @@
                         <option class="marcelo" name ="Escola" value="E. M. ROBERTO ALVES DE LIMA JUNIOR (AQUAVILE)">E. M. ROBERTO ALVES DE LIMA JUNIOR (AQUAVILE)</option>
                         <option class="marcelo" name ="Escola" value="E. M. SAN IZIDRO">E. M. SAN IZIDRO</option>
                         <option class="marcelo" name ="Escola" value="E. M. SUELY IDERIHA">E. M. SUELY IDERIHA</option>
-
                     </select>
-
-            
-
             </div>
             
 
@@ -522,8 +505,10 @@
             
                 <img src="./img/logo +.png" alt="logo+" class="logo" id="logo">
                 <div  id ="box" class="box-btn">
-                    <input  name="box" id="box" type="submit" value="Enviar" class="btn-submit">
+                    <button  name="box" id="enviar" type="submit"class="btn-submit"> 
+                        Enviar
                 </div>
+
                 <div class="rodapegeral" id="rodapegeral">
                 <div class="rodape" id="rodape">
                     <h2> TerceirizeMais LTDA</h2>
