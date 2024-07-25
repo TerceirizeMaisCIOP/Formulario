@@ -652,7 +652,7 @@ body {
   background-color: #f1f1f1;
   height: 19%;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 
 
 
@@ -747,6 +747,7 @@ body {
   justify-content: flex-end;
   flex-direction: column;
   margin-top: 29px;
+  margin-left: 66px;
 
 }
 
@@ -767,6 +768,7 @@ body {
   grid-gap: 20px;
   align-items: center;
   position: relative;
+  margin-left: 66px;
 }
 
 
