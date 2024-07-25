@@ -652,9 +652,10 @@ body {
 .nomes4 {
   font-size: small;
   position: relative;
-  left: -35%;
+  left: 8%;
   top: -44px;
   font-size: 10px;
+  width: 30px;
 
 }
 
@@ -767,7 +768,7 @@ body {
 }
 
 .autocomplete-items {
-  position: RELATIVE;
+  position: relative;
   border: 1px solid black;
   border-top: none;
   border-radius: 12px;
@@ -775,7 +776,7 @@ body {
   background-color: #fff;
   max-height: 105px;
   overflow-y: auto;
-  right: -28px;
+  right: -19px;
   bottom: 29px;
   height: 79px;
   width: 320px;
