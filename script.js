@@ -1,10 +1,54 @@
+const options = ["CMEI ABDIAS DO NASCIMENTO","CMEI APARECIDO NORATO CLARO","CMEI ANTONIETA TRINDADE","CMEI CAROLINA BENEDITA DOS SANTOS","CMEI CLEMILDE DE MARTINI LOPES DOS SANTOS","CMEI DIRCE DE ALMEIDA BARROS BAPTISTA",
+"CMEI DURVALINA PEREIRA OLIVEIRA DE ASSIS","CMEI FRANCISCO QUESADA ORTEGA","CMEI FRANCISCO SEIXAS","CMEI HELENA OMETTO TORRES","CMEI IRMA MARIA NIVEA","CMEI JOÃO RAMPAZZO","CMEI KALIM YOUSSEF YOUSSEF",
+"CMEI LAVINIA MONTEIRO DE MORAES","CMEI LEONIDAS SOBRINHO PORTO","CMEI MARISA ARRUDA DOS SANTOS","CMEI MARINA SABOIA NASCIMENTO","CMEI MALVINA POPPI PEDRIALLI","CMEI PROF. CLELIA REGINA GUILHERME DE ALMEIDA",
+"CMEI PROF. ROSANGELA O. ROMANO","CMEI RAFAELA KEMMER DE MORAES","CMEI RUTH DOS SANTOS SILVA","CMEI SANDRA REGINA MAXIMIANO LEME","CMEI TELMA CAVALHERI MOTTA SANCHES","CMEI VALERIA VERONESI",
+"CMEI VILMA ELIZA COLOMBO RIBEIRO","CMEI WATER OKANO","CMEI YOLANDA SALGADO VIEIRA LIMA","E. M. A. M. ARTHUR THOMAZ","E. M. AMÉRICO SABINO COIMBRA","E. M. ANITA GARIBALDI","E. M. ARISTEU DOS SANTOS RIBAS",
+"E. M. ATANAZIO LEONEL","E. M. BARTOLOMEU DE GUSMÃO","E. M. CARLOS DA COSTA BRANCO","E. M. CARLOS DIETZ","E. M. CARLOS KRAEMER","E. M. CLAUDIA RIZZI","E. M. CLAUDIO DE ALMEIDA E SILVA","E. M. CORINA MANTOVAN OKANO",
+"E. M. CORVETA CAMAQUÃ","E. M. DALVA FAHL BOAVENTURA","E. M. DAVID DEQUECH","E. M. DO CAMPO, TRABALHO E SABER","E. M. DO CAMPO EGIDIO DOMINGOS BRUNETTO","E. M. DOUTOR JOSE HOSKEN DE NOVAES",
+"E. M. EDMUNDO ODEBRECHT","E. M. ELIAS KAUAM","E. M. EUGENIO BRUGIN","E. M. FRANCISCO AQUINO TOLEDO","E. M. FRANCISCO PEREIRA DE ALMEIDA JUNIOR","E. M. HAYDEE COLLI MONTEIRO","E. M. HELVIO ESTEVES",
+"E. M. IGNEZ CORSO ANDREAZZA","E. M. IRENE APARECIDA DA SILVA","E. M. JADIR DUTRA DE SOUZA","E. M. JOÃO XXIII","E. M. JOHN KENNEDY","E. M. JULIANO STINGHEN","E. M. MACHADO DE ASSIS",
+"E. M. MAESTRO ANDREA NUZZI","E. M. MAESTRO ROBERTO PEREIRA PANICO","E. M. MARIA CANDIDA PEIXOTO SALLES","E. M. MARIA CARMELITA VILELA MAGALHAES","E. M. MARIA SHIRLEY BARNABÉ LYRA","E. M. MIGUEL BASPALHOK",
+"E. M. MARI CARRERA BUENO","E. M. MABIO GONÇALVES PALHANO","E. M. MELVIM JONES","E. M. NARA MANELLA","E. M. NEMAN SAHYUN","E. M. NINA GADERMANN","E. M. NORMAN PROCHET","E. M. OSVALDO CRUZ",
+"E. M. PADRE ANCHIETA","E. M. PROF ARACY SOARES DOS SANTOS","E. M. PROF. BENTO MUNHOZ DA ROCHA NETO","E. M. PROF. CARLOS ZEWE COIMBRA","E. M. PROF. CLELIA REGINA GUILHERME DE ALMEIDA",
+"E. M. PROF. DR. JOAQUIM VICENTE DE CASTRO","E. M. PROF. EURIDES CUNHA","E. M. PROF. HELVIO ESTEVES","E. M. PROF. JULIANO STINGHEN","E. M. PROF. JOVITA KAISER",
+"E. M. PROF. MOACYR CAMARGO MARTINS","E. M. PROF. MOACYR TEIXEIRA","E. M. PROF. ODÉSIO FRANCISCON","E. M. PROF. RUTH LEMOS","E. M. PROF. TEREZA CANHADAS BERTAN",
+"E. M. PROF. VILMA RODRIGUES ROMERO","E. M. REVERENDO ODILON","E. M. RUTH FERREIRA DE SOUZA","E. M. SALIM ABORIHAM","E. M. SAN IZIDRO","E. M. SENADOR GASPAR VELLOSO",
+"E. M. SONIA PARREIRA DEBEI","E. M. SUELY IDERIHA","E. M. VITORIO LIBARDI","E. M. ZUMBI DOS PALMARES"];
+    
 
+   document.getElementById("myInput").addEventListener("input", function() {
+       const input = this.value;
+       const itemsContainer = document.getElementById("autocomplete-list");
+       itemsContainer.innerHTML = ""; // Limpa as sugestões anteriores
+       
+       if (!input) {
+           return; // Se o campo estiver vazio, não exibe nada
+       }
+       
+       const filteredOptions = options.filter(option => option.toLowerCase().includes(input.toLowerCase()));
+       
+       filteredOptions.forEach(option => {
+           const item = document.createElement("div");
+           item.classList.add("autocomplete-item");
+           item.textContent = option;
+           item.addEventListener("click", function() {
+               document.getElementById("myInput").value = this.textContent; // Define o valor do campo
+               itemsContainer.innerHTML = ""; // Limpa as opções após a seleção
+           });
+           itemsContainer.appendChild(item);
+       });
+   });
+
+   // Fecha a lista de sugestões ao clicar fora
+   document.addEventListener("click", function() {
+       document.getElementById("autocomplete-list").innerHTML = "";
+   });
 
 const handleSubmit = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida]').value;
     const Codigo = document.querySelector('input[name=Codigo]').value;
@@ -35,7 +79,7 @@ const handleSubmit2 = (event) =>{
     event.preventDefault();
     
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida2]').value;
     const Codigo = document.querySelector('input[name=Codigo2]').value;
@@ -65,7 +109,7 @@ const handleSubmit3 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida3]').value;
     const Codigo = document.querySelector('input[name=Codigo3]').value;
@@ -96,7 +140,7 @@ const handleSubmit4 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida4]').value;
     const Codigo = document.querySelector('input[name=Codigo4]').value;
@@ -126,7 +170,7 @@ const handleSubmit5 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida5]').value;
     const Codigo = document.querySelector('input[name=Codigo5]').value;
@@ -158,7 +202,7 @@ const handleSubmit6 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida6]').value;
     const Codigo = document.querySelector('input[name=Codigo6]').value;
@@ -189,7 +233,7 @@ const handleSubmit7 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida7]').value;
     const Codigo = document.querySelector('input[name=Codigo7]').value;
@@ -221,7 +265,7 @@ const handleSubmit8 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida8]').value;
     const Codigo = document.querySelector('input[name=Codigo8]').value;
@@ -252,7 +296,7 @@ const handleSubmit9 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida9]').value;
     const Codigo = document.querySelector('input[name=Codigo9]').value;
@@ -283,7 +327,7 @@ const handleSubmit10 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida10]').value;
     const Codigo = document.querySelector('input[name=Codigo10]').value;
@@ -314,7 +358,7 @@ const handleSubmit11 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida11]').value;
     const Codigo = document.querySelector('input[name=Codigo11]').value;
@@ -344,7 +388,7 @@ const handleSubmit12 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida12]').value;
     const Codigo = document.querySelector('input[name=Codigo12]').value;
@@ -375,7 +419,7 @@ const handleSubmit13 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida13]').value;
     const Codigo = document.querySelector('input[name=Codigo13]').value;
@@ -406,7 +450,7 @@ const handleSubmit14 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida14]').value;
     const Codigo = document.querySelector('input[name=Codigo14]').value;
@@ -436,7 +480,7 @@ const handleSubmit15 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida15]').value;
     const Codigo = document.querySelector('input[name=Codigo15]').value;
@@ -466,7 +510,7 @@ const handleSubmit16 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida16]').value;
     const Codigo = document.querySelector('input[name=Codigo16]').value;
@@ -497,7 +541,7 @@ const handleSubmit17 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida17]').value;
     const Codigo = document.querySelector('input[name=Codigo17]').value;
@@ -528,7 +572,7 @@ const handleSubmit18 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida18]').value;
     const Codigo = document.querySelector('input[name=Codigo18]').value;
@@ -559,7 +603,7 @@ const handleSubmit19 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida19]').value;
     const Codigo = document.querySelector('input[name=Codigo19]').value;
@@ -590,7 +634,7 @@ const handleSubmit20 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida20]').value;
     const Codigo = document.querySelector('input[name=Codigo20]').value;
@@ -622,7 +666,7 @@ const handleSubmit21 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida21]').value;
     const Codigo = document.querySelector('input[name=Codigo21]').value;
@@ -653,7 +697,7 @@ const handleSubmit22 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida22]').value;
     const Codigo = document.querySelector('input[name=Codigo22]').value;
@@ -684,7 +728,7 @@ const handleSubmit23 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida23]').value;
     const Codigo = document.querySelector('input[name=Codigo23]').value;
@@ -716,7 +760,7 @@ const handleSubmit24 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida24]').value;
     const Codigo = document.querySelector('input[name=Codigo24]').value;
@@ -747,7 +791,7 @@ const handleSubmit25 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida25]').value;
     const Codigo = document.querySelector('input[name=Codigo25]').value;
@@ -776,7 +820,7 @@ const handleSubmit26 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida26]').value;
     const Codigo = document.querySelector('input[name=Codigo26]').value;
@@ -807,7 +851,7 @@ const handleSubmit27 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida27]').value;
     const Codigo = document.querySelector('input[name=Codigo27]').value;
@@ -838,7 +882,7 @@ const handleSubmit28 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida28]').value;
     const Codigo = document.querySelector('input[name=Codigo28]').value;
@@ -868,7 +912,7 @@ const handleSubmit29 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida29]').value;
     const Codigo = document.querySelector('input[name=Codigo29]').value;
@@ -899,7 +943,7 @@ const handleSubmit30 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida30]').value;
     const Codigo = document.querySelector('input[name=Codigo30]').value;
@@ -929,7 +973,7 @@ const handleSubmit31 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida31]').value;
     const Codigo = document.querySelector('input[name=Codigo31]').value;
@@ -961,7 +1005,7 @@ const handleSubmit32 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida32]').value;
     const Codigo = document.querySelector('input[name=Codigo32]').value;
@@ -993,7 +1037,7 @@ const handleSubmit33 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida33]').value;
     const Codigo = document.querySelector('input[name=Codigo33]').value;
@@ -1023,7 +1067,7 @@ const handleSubmit34 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida34]').value;
     const Codigo = document.querySelector('input[name=Codigo34]').value;
@@ -1054,7 +1098,7 @@ const handleSubmit35 = (event) =>{
     event.preventDefault();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida35]').value;
     const Codigo = document.querySelector('input[name=Codigo35]').value;
@@ -1098,7 +1142,7 @@ const handleSubmit36 = (event) =>{
     addloading();
 
     const Data = document.querySelector('input[name=date]').value;
-    const Escola = document.querySelector('select[name=Escola]').value;
+    const Escola = document.querySelector('input[name=escolas]').value;
     const Supervisor = document.querySelector('select[name=Supervisor]').value;
     const Medida = document.querySelector('input[name=Un-Medida36]').value;
     const Codigo = document.querySelector('input[name=Codigo36]').value;

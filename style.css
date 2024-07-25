@@ -620,90 +620,7 @@ body {
 
 }
 
-.claudemir {
-  background-color: #f0f8ff; /* Azul claro */
-}
-.carlos {
-  background-color: #ffebcd; /* Bege */
-}
-.paliarini {
-  background-color: #ffe4e1; /* Rosa claro */
-}
-.antonio {
-  background-color: #f0fff0; /* Verde claro */
-}
-.marcelo {
-  background-color: #e6e6fa; /* Lavanda */
-}
 
-.claudemir2 {
-  background-color: #f0f8ff; /* Azul claro */
-  color:black;
-  font-size: large;
-  letter-spacing: 1px;
-  font-family: 'Calibri';
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  
-}
-.carlos2 {
-  background-color: #ffebcd; /* Bege */
-  color:black;
-  font-size: large;
-  letter-spacing: 1px;
-  font-family: 'Calibri';
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.paliarini2 {
-  background-color: #ffe4e1; /* Rosa claro */
-  color:black;
-  font-size: large;
-  letter-spacing: 1px;
-  font-family: 'Calibri';
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.antonio2 {
-  background-color: #f0fff0; /* Verde claro */
-  color:black;
-  font-size: large;
-  letter-spacing: 1px;
-  font-family: 'Calibri';
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.marcelo2 {
-  background-color: #e6e6fa; /* Lavanda */
-  color:black;
-  font-size: large;
-  letter-spacing: 1px;
-  font-family: 'Calibri';
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.antonio2 {
-  background-color: #f0fff0; /* Lavanda */
-  color:black;
-  font-size: large;
-  letter-spacing: 1px;
-  font-family: 'Calibri';
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
 
 .mes {
     position: relative;
@@ -834,11 +751,77 @@ body {
   display: none;
   left: -2px;
 
+}
 
+.autocomplete-container {
+  position: relative;
+  display: inline-block;
+}
 
+.escolas {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  position: relative;
+  right: 22px;
+  bottom: 32px;
+  height: 8px;
+}
 
+.autocomplete-items {
+  position: RELATIVE;
+    border: 1px solid white;
+    border-top: none;
+    border-radius: 12px;
+    z-index: 99;
+    background-color: #fff;
+    max-height: 105px;
+    overflow-y: auto;
+    right: -4px;
+    bottom: 29px;
+    height: 79px;
+    width: 320px;
+}
+
+.autocomplete-item {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: "Calibri";
+  font-family: 'Calibri';
+  display: flex;
 
 }
+
+.autocomplete-item:hover {
+  background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .Enviar {
 
