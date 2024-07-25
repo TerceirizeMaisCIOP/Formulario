@@ -58,7 +58,7 @@ body {
     height: 711px;
     background: transparent;
     padding-bottom: 500px;
-    left: -8%;
+    left: -5%;
     top: -67px;
   }
   .input-hidden::-webkit-input-placeholder {
@@ -180,7 +180,7 @@ body {
 
   .produto {
     padding-left: 10%;
-    padding-right: 30%;
+    padding-right: 31%;
   }
   
   
@@ -652,7 +652,7 @@ body {
 .nomes4 {
   font-size: small;
   position: relative;
-  left: -38%;
+  left: -35%;
   top: -44px;
   font-size: 10px;
 
@@ -685,7 +685,7 @@ body {
   position: absolute;
   background: gray;
   opacity: 0.5;
-  width: 403px;
+  width: 423px;
   height: 955px;
   left: -4%;
   border-radius: 20px;
@@ -763,6 +763,7 @@ body {
   position: relative;
   bottom: 32px;
   height: 8px;
+  left: -17px;
 }
 
 .autocomplete-items {
@@ -774,7 +775,7 @@ body {
   background-color: #fff;
   max-height: 105px;
   overflow-y: auto;
-  right: -26px;
+  right: -28px;
   bottom: 29px;
   height: 79px;
   width: 320px;
