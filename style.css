@@ -2,6 +2,18 @@ body {
   display: block;
 }
 
+.introducao {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: center;
+
+
+}
 
 .box-title .title {
    
@@ -59,7 +71,7 @@ body {
     background: transparent;
     padding-bottom: 500px;
     left: -5%;
-    top: -67px;
+    top: -41px;
   }
   .input-hidden::-webkit-input-placeholder {
     color: #232323;
@@ -166,6 +178,7 @@ body {
     left: 7px;
     font-weight: bold;
     float: left;
+    top: 25px;
     background-image: linear-gradient(25deg, #d3b300 0, #bdb200 8.33%, #a6af00 16.67%, #8da902 25%, #73a011 33.33%, #58951b 41.67%, #3b8821 50%, #187a25 58.33%, #006e29 66.67%, #00642c 75%, #005b30 83.33%, #005434 91.67%, #004f38 100%);
   }
 
@@ -594,13 +607,13 @@ body {
 
 
   .nome {
-    position: relative;
     width: 86%;
     padding: 6px 20px;
     border-color: black;
     border-radius: 5px;
     background-color: #f1f1f1;
-    bottom: 34px;
+    display: flex;
+    margin-bottom: 23px;
 
 }
 
@@ -634,9 +647,7 @@ body {
 
 .nomes2 {
   font-size: 10px;
-  position: relative;
-  left: -126px;
-  bottom: 26px;
+  display: flex;
 
 
 }
@@ -644,18 +655,15 @@ body {
 .nomes3 {
   font-size: small;
   position: relative;
-  left: -135px;
-  top: -26px;
   font-size: 10px;
+  display: flex;
 }
 
 .nomes4 {
   font-size: small;
-  position: relative;
-  left: 8%;
-  top: -44px;
   font-size: 10px;
   width: 30px;
+  display: flex;
 
 }
 
@@ -666,9 +674,9 @@ body {
   border-color: black;
   border-radius: 5px;
   background-color: #f1f1f1;
-  bottom: 51px;
-  left: -25%;
   height: 19%;
+  display: flex;
+  margin-bottom: 40px;
 
 
 
@@ -690,7 +698,7 @@ body {
   height: 955px;
   left: -4%;
   border-radius: 20px;
-  top: -65px;
+  top: -39px;
 }
 
 .logo {
@@ -762,9 +770,9 @@ body {
   border: 1px solid;
   border-radius: 5px;
   position: relative;
-  bottom: 32px;
   height: 8px;
-  left: -17px;
+  display: flex;
+
 }
 
 .autocomplete-items {
@@ -776,10 +784,9 @@ body {
   background-color: #fff;
   max-height: 105px;
   overflow-y: auto;
-  right: -19px;
-  bottom: 29px;
   height: 79px;
   width: 320px;
+  display: flex;
 }
 
 .autocomplete-item {
