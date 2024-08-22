@@ -44,6 +44,17 @@ const options = ["CMEI ABDIAS DO NASCIMENTO","CMEI APARECIDO NORATO CLARO","CMEI
        document.getElementById("autocomplete-list").innerHTML = "";
    });
 
+   
+const addloading = () =>{
+    const input = document.getElementById('enviar');
+    input.innerHTML = '<img src="./img/loading.png"class="loading">';
+}
+
+const Removeloading = () =>{
+    const input = document.getElementById('enviar');
+    input.innerHTML = 'Enviar';
+}
+
 const handleSubmit = (event) =>{
     event.preventDefault();
 
@@ -1125,16 +1136,6 @@ const handleSubmit35 = (event) =>{
 
 }
 
-
-const addloading = () =>{
-    const input = document.getElementById('enviar');
-    input.innerHTML = '<img src="./img/loading.png"class="loading">';
-}
-
-const Removeloading = () =>{
-    const input = document.getElementById('enviar');
-    input.innerHTML = 'Enviar';
-}
 
 
 const handleSubmit36 = (event) =>{
