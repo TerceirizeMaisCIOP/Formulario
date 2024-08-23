@@ -1162,8 +1162,6 @@ const handleSubmit36 = (event) =>{
     }  )
 
     .then(data => {
-        console.log('Dados enviados com sucesso:', data);
-        // Redireciona para outro arquivo HTML
         window.location.href = "./index-enviar.html"; // Substitua 'outro-arquivo.html' pelo nome do seu arquivo
     })
     
@@ -1207,6 +1205,8 @@ document.querySelector('form') .addEventListener ('submit', handleSubmit33);
 document.querySelector('form') .addEventListener ('submit', handleSubmit34);
 document.querySelector('form') .addEventListener ('submit', handleSubmit35);
 document.querySelector('form') .addEventListener ('submit', handleSubmit36);
+
+
 /*
 
 {
