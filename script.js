@@ -1,4 +1,4 @@
-const options = ["CMEI ABDIAS DO NASCIMENTO","CMEI APARECIDO NORATO CLARO","CMEI ANTONIETA TRINDADE","CMEI CAROLINA BENEDITA DOS SANTOS","CMEI CLEMILDE DE MARTINI LOPES DOS SANTOS","CMEI DIRCE DE ALMEIDA BARROS BAPTISTA",
+ { const options = ["CMEI ABDIAS DO NASCIMENTO","CMEI APARECIDO NORATO CLARO","CMEI ANTONIETA TRINDADE","CMEI CAROLINA BENEDITA DOS SANTOS","CMEI CLEMILDE DE MARTINI LOPES DOS SANTOS","CMEI DIRCE DE ALMEIDA BARROS BAPTISTA",
 "CMEI DURVALINA PEREIRA OLIVEIRA DE ASSIS","CMEI FRANCISCO QUESADA ORTEGA","CMEI FRANCISCO SEIXAS","CMEI HELENA OMETTO TORRES","CMEI IRMA MARIA NIVEA","CMEI JOÃO RAMPAZZO","CMEI KALIM YOUSSEF YOUSSEF",
 "CMEI LAVINIA MONTEIRO DE MORAES","CMEI LEONIDAS SOBRINHO PORTO","CMEI MARISA ARRUDA DOS SANTOS","CMEI MARINA SABOIA NASCIMENTO","CMEI MALVINA POPPI PEDRIALLI","CMEI PROF. CLELIA REGINA GUILHERME DE ALMEIDA",
 "CMEI PROF. ROSANGELA O. ROMANO","CMEI RAFAELA KEMMER DE MORAES","CMEI RUTH DOS SANTOS SILVA","CMEI SANDRA REGINA MAXIMIANO LEME","CMEI TELMA CAVALHERI MOTTA SANCHES","CMEI VALERIA VERONESI",
@@ -44,16 +44,10 @@ const options = ["CMEI ABDIAS DO NASCIMENTO","CMEI APARECIDO NORATO CLARO","CMEI
        document.getElementById("autocomplete-list").innerHTML = "";
    });
 
-   
-const addloading = () =>{
-    const input = document.getElementById('enviar');
-    input.innerHTML = '<img src="./img/loading.png"class="loading">';
 }
 
-const Removeloading = () =>{
-    const input = document.getElementById('enviar');
-    input.innerHTML = 'Enviar';
-}
+
+
 
 const handleSubmit = (event) =>{
     event.preventDefault();
@@ -1140,7 +1134,7 @@ const handleSubmit35 = (event) =>{
 
 const handleSubmit36 = (event) =>{
     event.preventDefault();
-    addloading();
+
 
     const Data = document.querySelector('input[name=date]').value;
     const Escola = document.querySelector('input[name=escolas]').value;
@@ -1176,7 +1170,6 @@ const handleSubmit36 = (event) =>{
 }
 
 
- 
 
 document.querySelector('form') .addEventListener ('submit', handleSubmit);
 document.querySelector('form') .addEventListener ('submit', handleSubmit2);

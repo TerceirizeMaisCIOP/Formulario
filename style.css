@@ -170,7 +170,11 @@ body {
   background-image: linear-gradient(25deg, #d3b300 0, #bdb200 8.33%, #a6af00 16.67%, #8da902 25%, #73a011 33.33%, #58951b 41.67%, #3b8821 50%, #187a25 58.33%, #006e29 66.67%, #00642c 75%, #005b30 83.33%, #005434 91.67%, #004f38 100%);
 }
 
+.btn-submit:hover {
+  color: black;
+  opacity: 0.8;
 
+  }
 
 .Supervisor {
   color: black;
