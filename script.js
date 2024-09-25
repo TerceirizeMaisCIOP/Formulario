@@ -1172,9 +1172,7 @@ const form = document.querySelector('form');
 for (let i = 1; i <= 36; i++) {
     form.addEventListener('submit', window[`handleSubmit${i}`]
         
-        .then(data => {
-        window.location.href = "./index-enviar.html"; // Substitua 'outro-arquivo.html' pelo nome do seu arquivo
-    })
+   
     );
 
 }
