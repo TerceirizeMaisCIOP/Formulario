@@ -1156,61 +1156,27 @@ const handleSubmit36 = (event) =>{
         },
         body: JSON.stringify({ Data,Escola, Supervisor, Medida, Codigo, Produto, EstoqueAtual, QtdPedida  }),
         
-
         
         
-    }  )
+        
+    } 
+    
 
-    .then(data => {
-        window.location.href = "./index-enviar.html"; // Substitua 'outro-arquivo.html' pelo nome do seu arquivo
-    })
+)
+
     
 }
 
-document.querySelector('form') .addEventListener ('submit', handleSubmit);
-document.querySelector('form') .addEventListener ('submit', handleSubmit2);
-document.querySelector('form') .addEventListener ('submit', handleSubmit3);
-document.querySelector('form') .addEventListener ('submit', handleSubmit4);
-document.querySelector('form') .addEventListener ('submit', handleSubmit5);
-document.querySelector('form') .addEventListener ('submit', handleSubmit6);
-document.querySelector('form') .addEventListener ('submit', handleSubmit7);
-document.querySelector('form') .addEventListener ('submit', handleSubmit8);
-document.querySelector('form') .addEventListener ('submit', handleSubmit9);
-document.querySelector('form') .addEventListener ('submit', handleSubmit10);
-document.querySelector('form') .addEventListener ('submit', handleSubmit11);
-document.querySelector('form') .addEventListener ('submit', handleSubmit12);
-document.querySelector('form') .addEventListener ('submit', handleSubmit13);
-document.querySelector('form') .addEventListener ('submit', handleSubmit14);
-document.querySelector('form') .addEventListener ('submit', handleSubmit15);
-document.querySelector('form') .addEventListener ('submit', handleSubmit16);
-document.querySelector('form') .addEventListener ('submit', handleSubmit17);
-document.querySelector('form') .addEventListener ('submit', handleSubmit18);
-document.querySelector('form') .addEventListener ('submit', handleSubmit19);
-document.querySelector('form') .addEventListener ('submit', handleSubmit20);
-document.querySelector('form') .addEventListener ('submit', handleSubmit21);
-document.querySelector('form') .addEventListener ('submit', handleSubmit22);
-document.querySelector('form') .addEventListener ('submit', handleSubmit23);
-document.querySelector('form') .addEventListener ('submit', handleSubmit24);
-document.querySelector('form') .addEventListener ('submit', handleSubmit25);
-document.querySelector('form') .addEventListener ('submit', handleSubmit26);
-document.querySelector('form') .addEventListener ('submit', handleSubmit27);
-document.querySelector('form') .addEventListener ('submit', handleSubmit28);
-document.querySelector('form') .addEventListener ('submit', handleSubmit29);
-document.querySelector('form') .addEventListener ('submit', handleSubmit30);
-document.querySelector('form') .addEventListener ('submit', handleSubmit31);
-document.querySelector('form') .addEventListener ('submit', handleSubmit32);
-document.querySelector('form') .addEventListener ('submit', handleSubmit33);
-document.querySelector('form') .addEventListener ('submit', handleSubmit34);
-document.querySelector('form') .addEventListener ('submit', handleSubmit35);
-document.querySelector('form') .addEventListener ('submit', handleSubmit36);
+const form = document.querySelector('form');
+
+for (let i = 1; i <= 36; i++) {
+    form.addEventListener('submit', window[`handleSubmit${i}`]
+        
+        .then(data => {
+        window.location.href = "./index-enviar.html"; // Substitua 'outro-arquivo.html' pelo nome do seu arquivo
+    })
+    );
+
+}
 
 
-/*
-
-{
-    function mostrarDiv (){
-        window.location = "./index-enviar.html";
-     
-     } }
-
-*/
